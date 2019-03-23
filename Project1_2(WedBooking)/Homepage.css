@@ -37,10 +37,14 @@ p{text-align: center;}
   float: right;
 }
 img{
+  width: 100%;
+}
+.img-1{
   width: 70%;
   margin-top: 40px;
   margin-left: 131px;
 }
+
 /* Full-width input fields */
 input[type=text], input[type=password] {
   width: 100%;
@@ -326,7 +330,7 @@ img {vertical-align: middle;}
   border: none;
   outline: none;
   color: #ffc400;
-  padding: 14px 209px;
+  padding: 14px 149px;
   background-color: inherit;
   font: inherit;
   margin: 0;
@@ -437,10 +441,10 @@ img {vertical-align: middle;}
 div.gallery {
   background-color: rgb(160, 6, 6);
   color: #f2f2f2;
-  margin: 5px;
+  margin: 10px;
   border: 1px solid rgb(0, 0, 0);
   float: left;
-  width: 180px;
+  width: 246px;
 }
 
 div.gallery:hover {
@@ -453,7 +457,27 @@ div.gallery img {
   height: auto;
 }
 
-div.desc {
-  padding: 15px;
+.shazam {
+  padding: 18px;
+  text-align: center;
+}
+
+.capmar {
+  padding: 11px;
+  text-align: center;
+}
+
+.dumbo {
+  padding: 3px;
+  text-align: center;
+}
+
+.saeng {
+  padding: 22px;
+  text-align: center;
+}
+
+.theking {
+  padding: 10px;
   text-align: center;
 }
