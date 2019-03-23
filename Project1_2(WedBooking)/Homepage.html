@@ -7,53 +7,106 @@
     <title>Homepage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="Homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body >
         <div class="topnav" function slide()>
                 <a href="#home">Home</a>
-                <a href="#news">News</a>
+                <a href="#news">Movies</a>
                 <a href="#contact">Contact</a>
                 <a href="#about">About</a>
                 <div class="topnav-right">
                 <a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
                 </div>
         </div>
-    </div>
 </head>
-<body>
-
-<div class="slideshow-container">
-
-<div class="mySlides fade">
-  <img src="Picture\ad\1.jpg">
+<br><br>
+<div class="search" style="    width: 1250px;height: 48px;margin-left: 59px;">
+  <div class="dropdown ">
+      <button class="dropbtn">Movies
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <div class="header">
+          </div>
+            <div class="gallery">
+                <a target="_blank" href="Picture/Movie/shazam.jpg">
+                  <img class="image" src="Picture/Movie/shazam.jpg" alt="shazam" width="600" height="400">
+                </a>
+                <div class="desc">Add a description of the image here</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="Picture/Movie/shazam.jpg">
+                  <img class="image" src="Picture/Movie/capmar.jpg" alt="capmar" width="600" height="400">
+                </a>
+                <div class="desc">Add a description of the image here</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="Picture/Movie/shazam.jpg">
+                  <img class="image" src="Picture/Movie/dumbo.jpg" alt="dumbo" width="600" height="400">
+                </a>
+                <div class="desc">Add a description of the image here</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="Picture/Movie/shazam.jpg">
+                  <img class="image" src="Picture/Movie/saeng-krasue.jpg" alt="saeng-krasue" width="600" height="400">
+                </a>
+                <div class="desc">Add a description of the image here</div>
+              </div>   
+      </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Cinema
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <div class="header">
+          </div>   
+        </div>
+      </div>  
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search" style="width : 216px">
+      <button type="submit" style="width : 37px;"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
 </div>
 
+    <div class="slideshow-container">
+
 <div class="mySlides fade">
-  <img src="Picture\ad\2.jpg">
+  <img class="ad" src="Picture/ad/unnamed (1).jpg">
 </div>
 
 <div class="mySlides fade">
-  <img src="Picture\ad\3.jpg">
+  <img src="Picture/ad/unnamed (2).jpg">
+</div>
+
+<div class="mySlides fade">
+  <img src="Picture/ad/unnamed (3).jpg">
 </div>
 <div class="mySlides fade">
-  <img src="Picture\ad\4.jpg">
+  <img src="Picture/ad/unnamed (4).jpg">
 </div>
 <div class="mySlides fade">
-  <img src="Picture\ad\5.jpg">
+  <img src="Picture/ad/unnamed (5).jpg">
 </div>
 <div class="mySlides fade">
-  <img src="Picture\ad\6.jpg" >
+  <img src="Picture/ad/unnamed (6).jpg" >
 </div>
 <div class="mySlides fade">
-  <img src="Picture\ad\7.jpg">
+  <img src="Picture/ad/unnamed (7).jpg">
 </div>
 <div class="mySlides fade">
-  <img src="Picture\ad\8.jpg">
+  <img src="Picture/ad/unnamed (8).jpg">
 </div>
 <div class="mySlides fade">
-  <img src="Picture\ad\9.jpg">
+  <img src="Picture/ad/unnamed.jpg">
 </div>
 
 
@@ -74,7 +127,34 @@
   <span class="dot" onclick="currentSlide(8)"></span> 
   <span class="dot" onclick="currentSlide(9)"></span>  
 </div>
-<body>
+<script>
+   var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+    </script>
 <div id="id01" class="modal">
   
   <form class="modal-content animate" action="/action_page.php">
@@ -114,6 +194,6 @@ window.onclick = function(event) {
     }
 }
 </script>
-
+<br><br>
 </body>
 </html>
