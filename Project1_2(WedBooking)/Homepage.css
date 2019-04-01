@@ -214,6 +214,9 @@ span.psw {
     /* margin-left: 28px; */
     margin-left: -58px;
     border: none;
+}
+.icon{
+  text-align: center;
 } 
   }
 }
@@ -335,6 +338,44 @@ img {vertical-align: middle;}
   font: inherit;
   margin: 0;
 }
+.dropbtn2 {
+  border-radius: 4px;
+  background-color: rgb(160, 6, 6);
+  border: none;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 16px;
+  padding: 14px 149px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.dropbtn2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.dropbtn2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.dropbtn2:hover span {
+  padding-right: 25px;
+}
+
+.dropbtn2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
 
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: rgb(160, 6, 6);
@@ -444,7 +485,7 @@ div.gallery {
   margin: 10px;
   border: 1px solid rgb(0, 0, 0);
   float: left;
-  width: 246px;
+  width: 250px;
 }
 
 div.gallery:hover {
