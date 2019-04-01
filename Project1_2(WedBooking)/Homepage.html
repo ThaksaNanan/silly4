@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,12 +17,17 @@
                 <a href="#contact">Contact</a>
                 <a href="#about">About</a>
                 <div class="topnav-right">
+                  <img src="Picture/icon/Logo-Celebrating-20th-MFU-01.png" class="icon" style="width: 49px;height: 44px;">
+                  <img src="Picture/icon/it.gif"  class="icon" style="width: 49px;height: 44px;">
+                  <img src="Picture/icon/SE.jpg" class="icon" style="width: 84px;height: 71.25;">
+                <div class="topnav-right">
                 <a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
-                </div>
+              </div>
+              </div>
         </div>
 </head>
 <br><br>
-<div class="search" style="    width: 1250px;height: 48px;margin-left: 59px;">
+<div class="search" style="    width: 1250px;height: 48px;">
   <div class="dropdown ">
       <button class="dropbtn">Movies
         <i class="fa fa-caret-down"></i>
@@ -31,7 +35,7 @@
       <div class="dropdown-content">
             <div class="gallery">
                 <a class="gallery" target="_blank" href="Picture/Movie/shazam.jpg">
-                  <img class="gallery " src="Picture/Movie/shazam.jpg" alt="shazam" width="600" height="400">
+                  <img class="gallery " src="Picture/Movie/shazam.jpg" alt="shazam" width="600" height="400" >
                 </a>
                 <div class="shazam">shazam</div>
               </div>
@@ -74,8 +78,23 @@
         <div class="dropdown-content">
           <div class="header">
           </div>   
-        </div>
-      </div>  
+        </div> 
+    </div>
+      <button class="dropbtn2" style="
+      
+      width: 198.314px;
+      height: 58px;
+      margin-bottom: 0px;
+      padding-bottom: 20px;
+      margin-top: 0px;
+      border-bottom-width: 0px;
+      padding-top: 9px;
+      padding-left: 70px;
+      padding-right: 70px;
+      margin-left: 14px;
+  
+  "><span>check</span>
+      </button>
   <div class="search-container">
     <form action="/action_page.php">
       <input type="text" placeholder="Search.." name="search" style="width : 216px">
@@ -87,33 +106,33 @@
     <div class="slideshow-container">
 
 <div class="mySlides fade">
-  <img class="img-1" src="Picture/ad/1.jpg">
+  <img class="img-1" src="Picture/ad/unnamed.jpg">
 </div>
 
 <div class="mySlides fade">
-  <img class="img-1" src="Picture/ad/2.jpg">
+  <img class="img-1" src="Picture/ad/unnamed (1).jpg">
 </div>
 
 <div class="mySlides fade">
-  <img class="img-1" src="Picture/ad/3.jpg">
+  <img class="img-1" src="Picture/ad/unnamed (2).jpg">
 </div>
 <div class="mySlides fade">
-  <img class="img-1" src="Picture/ad/4.jpg">
+  <img class="img-1" src="Picture/ad/unnamed (3).jpg">
 </div>
 <div class="mySlides fade">
-  <img class="img-1" src="Picture/ad/5.jpg">
+  <img class="img-1" src="Picture/ad/unnamed (4).jpg">
 </div>
 <div class="mySlides fade">
-  <img class="img-1" src="Picture/ad/6.jpg" >
+  <img class="img-1" src="Picture/ad/unnamed (5).jpg" >
 </div>
 <div class="mySlides fade">
-  <img class="img-1" src="Picture/ad/7.jpg">
+  <img class="img-1" src="Picture/ad/unnamed (6).jpg">
 </div>
 <div class="mySlides fade">
-  <img class="img-1" src="Picture/ad/8.jpg">
+  <img class="img-1" src="Picture/ad/unnamed (7).jpg">
 </div>
 <div class="mySlides fade">
-  <img class="img-1" src="Picture/ad/9.jpg">
+  <img class="img-1" src="Picture/ad/unnamed (8).jpg">
 </div>
 
 
@@ -137,7 +156,6 @@
 <script>
    var slideIndex = 0;
 showSlides();
-
 function showSlides() {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -157,7 +175,6 @@ function showSlides() {
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
-
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
@@ -193,7 +210,6 @@ function currentSlide(n) {
 <script>
 // Get the modal
 var modal = document.getElementById('id01');
-
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
