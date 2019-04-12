@@ -522,3 +522,26 @@ div.gallery img {
   padding: 10px;
   text-align: center;
 }
+.under{
+  background-color: rgb(65, 63, 63);
+  color: rgb(0, 0, 0);
+}
+.Company{
+  background-color: #000;
+  text-align: center;
+}
+.vertical-menu {
+  width: 200px;
+}
+
+.vertical-menu a {
+  background-color: rgb(65, 63, 63);
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
