@@ -524,7 +524,7 @@ div.gallery img {
 }
 .under{
   background-color: rgb(65, 63, 63);
-  color: rgb(0, 0, 0);
+  color: rgb(190, 188, 188);
 }
 .Company{
   background-color: #000;
@@ -536,12 +536,38 @@ div.gallery img {
 
 .vertical-menu a {
   background-color: rgb(65, 63, 63);
-  color: black;
+  color: rgb(190, 188, 188);
   display: block;
   padding: 12px;
   text-decoration: none;
 }
 
 .vertical-menu a:hover {
-  background-color: #ccc;
+  color: #000;
+  text-decoration: underline;
 }
+.right{
+  overflow: hidden;
+  display: block;
+}
+.right a{
+  float: right;
+    display: block;
+    text-align: right;
+    width: 100%;
+    text-decoration: none;
+    padding: 14px;
+}
+.left{
+  overflow: hidden;
+  display: block;  
+}
+.left a{
+  float: left;
+    display: block;
+    text-align: left;
+    width: 100%;
+    text-decoration: none;
+    padding: 14px;
+}
+
