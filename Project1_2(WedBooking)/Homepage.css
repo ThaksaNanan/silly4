@@ -482,7 +482,7 @@ img {vertical-align: middle;}
 div.gallery {
   background-color: rgb(160, 6, 6);
   color: #f2f2f2;
-  margin: 10px;
+  margin: 8px;
   border: 1px solid rgb(0, 0, 0);
   float: left;
   width: 250px;
@@ -571,3 +571,105 @@ div.gallery img {
     padding: 14px;
 }
 
+/* Style the navigation menu */
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 23%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50; /* Add a green color to the "active/current" link */
+  color: white;
+}
+//ข้างล่าง//
+.txttopicfmenu {
+    font-size: 24px;
+    color: #e0ae00;
+    line-height: 40px;
+    font-family: 'DBHelvethaicaX55Regular';
+}
+.eachmenu {
+    float: left;
+    width: 100%;
+}
+.fmenu {
+    background: #191919;
+    width: 100%;
+    padding: 20px 0;
+    height: 270px;
+}
+.wrapper-footer {
+    width: 1140px;
+    margin: auto;
+    overflow: hidden;
+}
+.fmenuL {
+    float: left;
+    width: 65%;
+    height: 100%;
+    position: relative;
+    padding-right: 5%;
+}
+.rowmenu {
+    float: left;
+    width: 25%;
+}
+.topicfmenu {
+    float: left;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+.btnlinkfmenu {
+    font-size: 20px;
+    color: #aeaeae;
+    line-height: 26px;
+    text-decoration: none;
+    font-family: 'angsananew';
+
+}
+
+.btnlinkfmenu {
+    float: left;
+    clear: both;
+}
+.eachmenu a:hover{
+    color: #ffffff;
+}
+h3{
+  margin: 0;
+  font size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #FFD700;
+}
