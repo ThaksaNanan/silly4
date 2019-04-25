@@ -1,40 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login</title>
-	<link rel="stylesheet" type="text/css" media="screen" href="Homepage.css">
+    <link rel="icon" href="Picture/icon/287473299e.png" type="image/x-icon"> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="Admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<div class="container">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
-
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-        
-      <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
+    <center><img src="Picture/icon/lg.triple-gears-loading-icon.gif" style="width: 15%;height: 15%;"></center>
+    <div class="box">
+    <h1>Login(Admin)</h1>
+    <form>
+      <label for="id" style="margin-right: 25px;padding-left: 35px;">ID 
+      </label><input type="text" id="id" name="id"></label><br>
+      <label for="password"style="padding-left: 0px;margin-left: 15px;">Password
+      <input type="text" id="password" name="password"></label><br><br>
+      <button>Login</button><button>Reset</button>
+    </form>
+  <br>
 </div>
-
-<script>
-// Get the modal
-var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script>
+  
+  
 </body>
 </html>
