@@ -1626,6 +1626,7 @@ h3{
 }
 .book_payment_head {
     padding: 22px 22px;
+    background-color: #9A9696;
 }
 .book_payment_email {
     clear: both;
@@ -1752,4 +1753,7 @@ h3{
 }
 .ppl{
 width: 12%
+}
+.bgpay{
+  background-color: #9A9696;
 }
