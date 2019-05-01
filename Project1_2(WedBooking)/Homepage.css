@@ -885,12 +885,12 @@ div.gallery img {
 
 .movieBox{
   padding: 20px 0;
-  background-color: #333;
+  background-color: #f5f7fb;
 }
 
 .box-movie-detail {
     padding: 20px 0;
-    background-color: rgb(124, 124, 124);
+    background-color: #f5f7fb
 }
 
 /**//**/
@@ -909,8 +909,8 @@ div.gallery img {
 
 .showtime-box {
   padding-top: 20px;
-  background-color: rgb(124, 124, 124);
-  border: 1px solid rgba(0, 0, 0, 0.671);
+  background-color: #fff;
+  border: 1px solid #c6c7c7;
   margin-top: 20px;
   padding-top: 0;
   height: 270px;
@@ -929,9 +929,9 @@ div.gallery img {
 }
 
 .showtime-box .showtime-header {
-  background-color: #a51010d8;
-  border: 1px solid #a5101080;
-  color: rgb(255, 217, 0);
+  background-color: #2e66cf;
+  border: 1px solid #2e66cf;
+  color: #fff;
   margin: -1px -1px 0;
   padding: 10px;
   font-weight: 600;
@@ -1215,34 +1215,29 @@ img {
   margin-bottom: 15px;
 }
 
-
+.button-showtime.active {
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  background: #2f66cd;
+  background: linear-gradient(90deg,#2f66cd,#4db0db 75%,#5ab6de);
+}
 @media (min-width: 768px){
 .button-showtime {
   min-width: 110px;
   height: 40px;
   padding: 8px;
   font-size: 16px;
-  border: 2px solid #000000;
 }}
 .button-showtime {
-  color: #ffffff;
-  border: 2px solid #000000;
+  color: #1e1f24;
+  border: 2px solid #064cb7;
   line-height: 1;
   background: none;
   min-width: 52px;
   height: 35px;
   padding: 0;
   font-size: 12px;
-}
-.button-showtime:hover {
-  color: rgb(255, 255, 255);
-  border: 2px solid #000000;
-  font-weight: 600;
-  background: rgb(163, 12, 12);
-  border-bottom:4px solid #ffc400;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  cursor: pointer;
 }
 @media (max-width: 991px) and (min-width: 768px){
 .button {
@@ -1275,6 +1270,15 @@ time-list {
   margin-top: 20px;
 }
 
+.button-showtime:disabled {
+  border: 1px solid #c6c7c7;
+  color: #989898;
+  background: none;
+  cursor: not-allowed;
+}
+.button:disabled {
+  opacity: .6;
+}
 
 .container2 {
   width: 750px;
@@ -1305,13 +1309,12 @@ time-list {
 }
 
 .box-movie-detail .detail-box {
-    background-color: rgb(90, 89, 89);
-    color: white;
+    background-color: #fff;
     border-radius: 5px;
     margin-top: 40px;
     margin-bottom: 40px;
     padding: 0 50px 0 100px;
-    box-shadow: 0 2px 4px 0 rgba(12, 12, 12, 0.35);
+    box-shadow: 0 2px 4px 0 hsla(180,1%,78%,.35);
 }
 
 .box-movie-detail .poster-land {
@@ -1356,7 +1359,6 @@ time-list {
     padding: 0;
     font-size: 16px;
     font-weight: 600;
-    text-align: center;
 }
 
 .box-movie-detail .movie-detail .genre {
@@ -1367,25 +1369,15 @@ time-list {
 
 .movie-detail-list .list-item:first-child {
     padding-left: 0;
-    margin-left: 160px;
 }
 
 .movie-detail-list .list-item+.list-item {
-    border-left: 1px solid #474747;
-
+    border-left: 1px solid #c6c7c7;
 }
 
 .box-movie-detail .movie-detail .button-gray-trans {
-    margin-top: 0px;
+    margin-top: 15px;
     min-width: 190px;
-}
-.box-movie-detail .movie-detail .button-gray-trans:hover {
-  background-color: white;
-  color: #000;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  border-bottom:4px solid #ffc400;
 }
 
 .box-movie-detail .movie-detail .button {
@@ -1399,8 +1391,6 @@ time-list {
     line-height: 1.4;
     border: 1px solid #c6c7c7;
     background: none;
-    margin-left: 110px;
-    border-bottom-width: 1px;
 }
 
 .box-movie-detail .button {
@@ -1419,341 +1409,135 @@ time-list {
 .sit{
   background-image: url("Movie/Seat\ \(1\).jpg");
 }
-.txttopicfmenu {
-    font-size: 24px;
-    color: #e0ae00;
-    line-height: 40px;
-    font-family: 'DBHelvethaicaX55Regular';
-}
-.eachmenu {
-    float: left;
-    width: 100%;
-}
-.fmenu {
-    background: #191919;
-    width: 100%;
-    padding: 20px 0;
-    height: 270px;
-}
-.wrapper-footer {
-    width: 1140px;
-    margin: auto;
-    overflow: hidden;
-}
-.fmenuL {
-    float: left;
-    width: 65%;
-    height: 100%;
-    position: relative;
-    padding-right: 5%;
-}
-.rowmenu {
-    float: left;
-    width: 25%;
-}
-.topicfmenu {
-    float: left;
-    width: 100%;
-    height: 40px;
-    line-height: 40px;
-}
-.btnlinkfmenu {
-    font-size: 20px;
-    color: #aeaeae;
-    line-height: 26px;
-    text-decoration: none;
-    font-family: 'angsananew';
 
+.flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
 }
 
-.btnlinkfmenu {
-    float: left;
-    clear: both;
+.movies-wrapper .movie-card {
+  width: 33.333%;
 }
-.eachmenu a:hover{
-    color: #ffffff;
+
+.movie-card>a {
+  display: block;
+  text-decoration: none;
+  height: 100%;
+  box-shadow: 0 1px 5px -1px rgba(0,0,0,.1);
+  transition: all .2s ease-out;
 }
-h3{
-  margin: 0;
-  font size: 24px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-family: inherit;
+
+.movie-card .ribbon {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.movie-card .ribbon span {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 2;
+}
+
+.movie-card .release-date {
+  color: #2d64cf;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  margin: 0 0 5px;
+}
+
+.movie-card .name {
+  color: #222;
+  font-size: 14px;
   font-weight: 500;
-  line-height: 1.1;
-  color: #FFD700;
+  line-height: 1.2;
+  margin: 0 0 10px;
 }
-.book_payment {
-    background-color: #fff;
-    border-radius: 5px;
-    padding-bottom: 57px;
-}
-<ลบได้>
-    .shopping_summary_price {
-        background: #fff none repeat scroll 0 0;
 
-        color: #000;
-        display: block;
-        font-size: 20px;
-        padding: 14px 0 5px 0;
-        text-align: right;
-        overflow: hidden;
+.section-movies {
+  padding-top: 0;
+  background-image: url(/assets/images/bg-home-bottom.png);
+  background-size: contain;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+}
 
-    }
-    .shop_summary_price_text {
-        display: inline-block;
-        float:right;font-size:36px;
-    }
-    .shopping_promotion{
-        padding-left: 0px;
-        padding-top: 0px;
-        font-size: 20px;
-        line-height: 24px;
-    }
-    .promotion_code b{color:#ed0722}
-    #decrease_promotion{
-        float: right;
-        color: #ed0722;
-        /*margin-right: 19px;*/
-        font-size: 24px;
-        margin-top: 11px;
-    }
-    .shop_seating_name{line-height: 33px;}
-    .grey_text{font-size: 18px;}
-    .shopping_promotion_code{float:left}
-    .pink_text{color:#a40328;font-weight: bold;font-size: 18px;}
-    .old_price{
-        font-size: 17px;
-        display: block;
-        margin-top: -8px;
-        font-weight: bold;
-        color: #777;
-    }
-    .shop-seating-title {border-bottom:1px solid #e0e0e0;}
-    .shop_seating {padding-bottom:3px;}
-    .shop_seating .shop_seating_name h3{width:auto;}
-    .summary_title {margin-right:10px;font-size:17px;line-height: 32px;}
-    .shop_summary_price_text sup {top:-15px;font-size:14px;margin-left:5px;}
-    .shopping_promotion_title {margin-top:0px;border-bottom: 1px solid #e0e0e0;padding-bottom: 5px;}
-    .total_summary {background: #333;color: #fff;margin-top: 20px;padding:20px 10px;border-radius: 5px;}
-    #promotion_text {font-size:16px;}
-    #promotion_code {font-size:15px;}
-    #promotion_code span {font-size:18px;color:#f00;}
-    .discount_price {color:#f00;}
-    .shopping_promotion_data{margin:11px 0}
-    .total_summary_text {float:left;}
-    .total_summary .shop_summary_price_text {color:#f00;}
-  .book_payment_input.form {float: left !important;}
-  .book_payment_input.form input[type=radio], .book_payment_input.form input[type=checkbox] {width: 25px !important; margin: 0px !important;}
-  .book_payment_input label, .gender, #accept_agreement {cursor: pointer !important;}
-    #voucherButton{
-        color: #fff;
-        border: none;
-        font-size: 16px;
-        padding: 9px 10px;
-        border-radius: 2px;
-        background: #9B0127;
-    }
-.txt-seating-title {
-    font-size: 20px;
-    color: #a0a0a0;
-    position: relative;
-    line-height: 36px;
+.top-wrapper {
+  background: #f5f7fb;
+  background: linear-gradient(180deg,#f5f7fb,#fcfdfe);
+  background: url(/assets/images/bg-home-top.png),linear-gradient(180deg,#f5f7fb,#fcfdfe);
+  background-size: contain;
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
-.shop-seating-title {
-    border-bottom: 1px solid #e0e0e0;
+
+.movie-card {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  letter-spacing: .025em;
+  margin-bottom: 10px;
+  position: relative;
 }
-.shop-seating-title {
-    float: left;
-    width: 100%;
-    position: relative;
-    border-bottom: 1px solid rgba(0,0,0,0.3);
-    padding-bottom: 5px;
+
+
+.movie-card .poster .image {
+  width: 100%;
+  display: inline-block;
+  background-color: #eee;
+  background-size: cover;
 }
-.book_payment_head {
-    padding: 22px 22px;
+
+.movie-card .poster {
+  font-size: 0;
+  margin-bottom: 10px;
+  position: relative;
 }
-.shopping_summary_contain {
-    background: #E9EAED;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1) inset;
-    overflow: hidden;
+
+.section-movies .section-header {
+  text-align: center;
 }
-.blogsummarycontain {
-    float: left;
-    width: 100%;
-    background: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
+
+.section-header .heading {
+  background-color: rgb(229, 192, 157);
+  color: #2d64cf;
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #c6c7c7;
+  text-align: center;
+  padding: 0;
 }
-.innersummary {
-    float: left;
-    width: 100%;
-    background: #fff;
+
+.movie-card {
+  margin: 45px 0 25px;
 }
-.shop_seating {
-    padding-bottom: 3px;
+
+.flex-wrapper .flex-item {
+  padding: 0 15px;
 }
-.shop_seating {
-    background-color: #fff;
-    padding: 10px 10px 10px 3px;
-    position: relative;
+
+.movie-card>a {
+  padding: 0 10px 10px;
+  border-radius: 3px;
+  background-color: #fff;
 }
-.shop_seating .shop_seating_img {
-    float: left;
+
+.movie-card .poster .image {
+  margin-top: -45px;
 }
-.shop_seating_name {
-    line-height: 33px;
-}
-.shop_seating_price {
-    background-color: #2d2d2d;
-    color: #fff;
-    position: absolute;
-    right: 6px;
-    border-radius: 3px;
-    padding: 5px 12px;
-    font-size: 24px;
-    font-weight: bold;
-    top: 17px;
-}
-.clr {
-    clear: both;
-    float: none;
-}
-.clr {
-    clear: both;
-    float: none;
-}
-.book_payment_head {
-    padding: 22px 22px;
-    background-color: #9A9696;
-}
-.book_payment_email {
-    clear: both;
-    padding: 0px 22px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #d2d2d2;
-}
-.book_payment_input input {
-    background-color: #4D4D4D;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    padding: 0px 14px;
-    font-size: 16px;
-    width: 98%;
-    line-height: 40px;
-}
-.book_payment_notice {
-    margin-top: 14px;
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-.book_payment_reserve {
-    padding: 32px 22px 18px;
-    border-bottom: 1px solid #d2d2d2;
-    position: relative;
-}
-.reserve_noneborder {
-    border: none;
-}
-.book_payment_bank {
-    text-align: center;
-    border: 1px solid #d2d2d2;
-    width: 91%;
-    margin: auto;
-    position: relative;
-}
-.book_bank_bg {
-    background-color: #fff;
-    margin: auto;
-    margin-top: 28px;
-    margin-bottom: 18px;
-    width: 104%;
-    margin-left: -3%;
-}
-.book_payment_email 
-.book_payment_input input {
-    background-color: #4D4D4D;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    padding: 0px 14px;
-    font-size: 16px;
-    width: 98%;
-    line-height: 40px;
-}
-.book_payment_email 
-.book_payment_input input {
-    background-color: #4D4D4D;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    padding: 0px 14px;
-    font-size: 16px;
-    width: 98%;
-    line-height: 40px;
-}
-.book_payment_notice .red {
-    color: red;
-}
-.book_reserve_left {
-    float: left;
-    width: 75%;
-}
-.book_reserve_right {
-    float: left;
-    width: 24%;
-}
-.book_reserve_right .button_reserve {
-    color: #fff;
-    border: none;
-    font-size: 16px;
-    padding: 9px 10px;
-    border-radius: 2px;
-    margin-top: 46px;
-    margin-left: 21px;
-    background: #9B0127;
-}
-.reserve_noneborder {
-    border: none;
-}
-.book_payment_reserve {
-    padding: 32px 22px 18px;
-    border-bottom: 1px solid #d2d2d2;
-    position: relative;
-}
-.book_payment_bank .book_bank_title {
-    font-size: 16px;
-    font-weight: bold;
-    width: 32%;
-    background-color: #fff;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: -10px;
-    color: #B16B38;
-    font-size: 20px;
-}
-.book_payment_bank .book_bank_bg {
-    background-color: #fff;
-    margin: auto;
-    margin-top: 28px;
-    margin-bottom: 18px;
-    width: 104%;
-    margin-left: -3%;
-}
-.popo {
-  background-color: #9A9696;
-}
-.plp {
-  width: 4%
-}
-.ppl{
-width: 12%
-}
-.bgpay{
-  background-color: #9A9696;
-}
+
+
