@@ -1419,3 +1419,331 @@ time-list {
 .sit{
   background-image: url("Movie/Seat\ \(1\).jpg");
 }
+.txttopicfmenu {
+    font-size: 24px;
+    color: #e0ae00;
+    line-height: 40px;
+    font-family: 'DBHelvethaicaX55Regular';
+}
+.eachmenu {
+    float: left;
+    width: 100%;
+}
+.fmenu {
+    background: #191919;
+    width: 100%;
+    padding: 20px 0;
+    height: 270px;
+}
+.wrapper-footer {
+    width: 1140px;
+    margin: auto;
+    overflow: hidden;
+}
+.fmenuL {
+    float: left;
+    width: 65%;
+    height: 100%;
+    position: relative;
+    padding-right: 5%;
+}
+.rowmenu {
+    float: left;
+    width: 25%;
+}
+.topicfmenu {
+    float: left;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+.btnlinkfmenu {
+    font-size: 20px;
+    color: #aeaeae;
+    line-height: 26px;
+    text-decoration: none;
+    font-family: 'angsananew';
+
+}
+
+.btnlinkfmenu {
+    float: left;
+    clear: both;
+}
+.eachmenu a:hover{
+    color: #ffffff;
+}
+h3{
+  margin: 0;
+  font size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #FFD700;
+}
+.book_payment {
+    background-color: #fff;
+    border-radius: 5px;
+    padding-bottom: 57px;
+}
+<ลบได้>
+    .shopping_summary_price {
+        background: #fff none repeat scroll 0 0;
+
+        color: #000;
+        display: block;
+        font-size: 20px;
+        padding: 14px 0 5px 0;
+        text-align: right;
+        overflow: hidden;
+
+    }
+    .shop_summary_price_text {
+        display: inline-block;
+        float:right;font-size:36px;
+    }
+    .shopping_promotion{
+        padding-left: 0px;
+        padding-top: 0px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .promotion_code b{color:#ed0722}
+    #decrease_promotion{
+        float: right;
+        color: #ed0722;
+        /*margin-right: 19px;*/
+        font-size: 24px;
+        margin-top: 11px;
+    }
+    .shop_seating_name{line-height: 33px;}
+    .grey_text{font-size: 18px;}
+    .shopping_promotion_code{float:left}
+    .pink_text{color:#a40328;font-weight: bold;font-size: 18px;}
+    .old_price{
+        font-size: 17px;
+        display: block;
+        margin-top: -8px;
+        font-weight: bold;
+        color: #777;
+    }
+    .shop-seating-title {border-bottom:1px solid #e0e0e0;}
+    .shop_seating {padding-bottom:3px;}
+    .shop_seating .shop_seating_name h3{width:auto;}
+    .summary_title {margin-right:10px;font-size:17px;line-height: 32px;}
+    .shop_summary_price_text sup {top:-15px;font-size:14px;margin-left:5px;}
+    .shopping_promotion_title {margin-top:0px;border-bottom: 1px solid #e0e0e0;padding-bottom: 5px;}
+    .total_summary {background: #333;color: #fff;margin-top: 20px;padding:20px 10px;border-radius: 5px;}
+    #promotion_text {font-size:16px;}
+    #promotion_code {font-size:15px;}
+    #promotion_code span {font-size:18px;color:#f00;}
+    .discount_price {color:#f00;}
+    .shopping_promotion_data{margin:11px 0}
+    .total_summary_text {float:left;}
+    .total_summary .shop_summary_price_text {color:#f00;}
+  .book_payment_input.form {float: left !important;}
+  .book_payment_input.form input[type=radio], .book_payment_input.form input[type=checkbox] {width: 25px !important; margin: 0px !important;}
+  .book_payment_input label, .gender, #accept_agreement {cursor: pointer !important;}
+    #voucherButton{
+        color: #fff;
+        border: none;
+        font-size: 16px;
+        padding: 9px 10px;
+        border-radius: 2px;
+        background: #9B0127;
+    }
+.txt-seating-title {
+    font-size: 20px;
+    color: #a0a0a0;
+    position: relative;
+    line-height: 36px;
+}
+.shop-seating-title {
+    border-bottom: 1px solid #e0e0e0;
+}
+.shop-seating-title {
+    float: left;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    padding-bottom: 5px;
+}
+.book_payment_head {
+    padding: 22px 22px;
+}
+.shopping_summary_contain {
+    background: #E9EAED;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1) inset;
+    overflow: hidden;
+}
+.blogsummarycontain {
+    float: left;
+    width: 100%;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.innersummary {
+    float: left;
+    width: 100%;
+    background: #fff;
+}
+.shop_seating {
+    padding-bottom: 3px;
+}
+.shop_seating {
+    background-color: #fff;
+    padding: 10px 10px 10px 3px;
+    position: relative;
+}
+.shop_seating .shop_seating_img {
+    float: left;
+}
+.shop_seating_name {
+    line-height: 33px;
+}
+.shop_seating_price {
+    background-color: #2d2d2d;
+    color: #fff;
+    position: absolute;
+    right: 6px;
+    border-radius: 3px;
+    padding: 5px 12px;
+    font-size: 24px;
+    font-weight: bold;
+    top: 17px;
+}
+.clr {
+    clear: both;
+    float: none;
+}
+.clr {
+    clear: both;
+    float: none;
+}
+.book_payment_head {
+    padding: 22px 22px;
+}
+.book_payment_email {
+    clear: both;
+    padding: 0px 22px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #d2d2d2;
+}
+.book_payment_input input {
+    background-color: #4D4D4D;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0px 14px;
+    font-size: 16px;
+    width: 98%;
+    line-height: 40px;
+}
+.book_payment_notice {
+    margin-top: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.book_payment_reserve {
+    padding: 32px 22px 18px;
+    border-bottom: 1px solid #d2d2d2;
+    position: relative;
+}
+.reserve_noneborder {
+    border: none;
+}
+.book_payment_bank {
+    text-align: center;
+    border: 1px solid #d2d2d2;
+    width: 91%;
+    margin: auto;
+    position: relative;
+}
+.book_bank_bg {
+    background-color: #fff;
+    margin: auto;
+    margin-top: 28px;
+    margin-bottom: 18px;
+    width: 104%;
+    margin-left: -3%;
+}
+.book_payment_email 
+.book_payment_input input {
+    background-color: #4D4D4D;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0px 14px;
+    font-size: 16px;
+    width: 98%;
+    line-height: 40px;
+}
+.book_payment_email 
+.book_payment_input input {
+    background-color: #4D4D4D;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0px 14px;
+    font-size: 16px;
+    width: 98%;
+    line-height: 40px;
+}
+.book_payment_notice .red {
+    color: red;
+}
+.book_reserve_left {
+    float: left;
+    width: 75%;
+}
+.book_reserve_right {
+    float: left;
+    width: 24%;
+}
+.book_reserve_right .button_reserve {
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    padding: 9px 10px;
+    border-radius: 2px;
+    margin-top: 46px;
+    margin-left: 21px;
+    background: #9B0127;
+}
+.reserve_noneborder {
+    border: none;
+}
+.book_payment_reserve {
+    padding: 32px 22px 18px;
+    border-bottom: 1px solid #d2d2d2;
+    position: relative;
+}
+.book_payment_bank .book_bank_title {
+    font-size: 16px;
+    font-weight: bold;
+    width: 32%;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -10px;
+    color: #B16B38;
+    font-size: 20px;
+}
+.book_payment_bank .book_bank_bg {
+    background-color: #fff;
+    margin: auto;
+    margin-top: 28px;
+    margin-bottom: 18px;
+    width: 104%;
+    margin-left: -3%;
+}
+.popo {
+  background-color: #9A9696;
+}
