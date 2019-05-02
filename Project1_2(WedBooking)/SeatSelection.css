@@ -7,9 +7,10 @@
     float: left;
     display: block;
     margin: 5px;
-    background: #4CAF50;
-    width: 200px;
-    height: 140px;
+    background-image: url(Picture/ad/chair3.png);
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 64px;
 }
 
 .seat-select {
@@ -17,7 +18,8 @@
 }
 
 .seat-select:checked+.seat {
-    background: #F44336;
+    background-image: url(Picture/ad/chair2.png);
+    background-repeat: no-repeat;
 }
 .result{
   color: white;
@@ -34,7 +36,7 @@
 }
 
 .hovering{
-	background-color: #ae59b3;
+    background-color: #ae59b3;
 }
 .selected{
     background-color: red;
