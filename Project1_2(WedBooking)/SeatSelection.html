@@ -1,6 +1,8 @@
 <!DOCTYPE html>
+
 <html>
 <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="icon" href="Picture/icon/Movie 3.ico" type="image/x-icon">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,12 +11,15 @@
   <link rel="stylesheet" type="text/css" media="screen" href="Homepage.css">
   <link rel="stylesheet" type="text/css" media="screen" href="SeatSelection.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="SeatSelection.js"></script>
+  <script language="JavaScript" type="text/javascript" src="SeatSelection.js"></script>
+
 </head>
-<body>
-  <form id="reservation" method="post" action="#">
+
+<body onload="SeatSelection.php">
+
+  <form id="reservation" method="post" >
     <section id="seats">
-      <input id="seat-1" class="seat-select" type="checkbox" value="1" name="seat[]" onclick="Count()" />
+      <input id="seat-1" class="seat-select" type="checkbox" value="1" name="seat[]" />
       <label for="seat-1" class="seat"></label>
       <input id="seat-2" class="seat-select" type="checkbox" value="2" name="seat[]" />
       <label for="seat-2" class="seat"></label>
@@ -24,8 +29,12 @@
       <label for="seat-4" class="seat"></label>
     </section>
     <input type="submit" />
-    <result class="result" id="id1"> asd </result>
+    <result class="result" id="id1" action=getValue()> asd </result>
 
+
+  <!--
+  <div id="messagePanel" class="messagePanel" onload="printarray" ></div>
+  -->
 
 </body>
 </html>
