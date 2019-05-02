@@ -1,7 +1,11 @@
 body { background-image: url(Picture/Background.jpg);
-  background-size: cover;
+  /*background-size: cover;*/
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  /*height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;*/
   }
 p{text-align: center;}
 .topnav {
@@ -883,9 +887,23 @@ div.gallery img {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+ 
 }
 
 .container3 {
+  width: 1170px;
+  
+}
+
+.container4 {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  background: #f5f7fb;
+}
+
+.container4 {
   width: 1170px;
   
 }
@@ -1792,9 +1810,9 @@ width: 12%
 }
 
 .top-wrapper {
-  background: #f5f7fb;
+  /*background: #f5f7fb;
   background: linear-gradient(180deg,#f5f7fb,#fcfdfe);
-  background: url(/assets/images/bg-home-top.png),linear-gradient(180deg,#f5f7fb,#fcfdfe);
+  background: url(/assets/images/bg-home-top.png),linear-gradient(180deg,#f5f7fb,#fcfdfe);*/
   background-size: contain;
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -1828,8 +1846,8 @@ width: 12%
 }
 
 .section-header .heading {
-  background-color: rgb(229, 192, 157);
-  color: #2d64cf;
+  background-color: rgb(192, 38, 38);
+  color: #0e0e0f;
   font-size: 26px;
   font-weight: 500;
   margin-bottom: 50px;
