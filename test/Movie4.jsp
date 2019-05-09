@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-include('connect.php');
+include('connect.jsp');
 ?>
 <head>
     <meta charset="UTF-8">
@@ -37,7 +37,7 @@ include('connect.php');
             </button>
             <div class="dropdown-content">
                 <div class="gallery">
-                    <a class="gallery" target="_blank" href="Movie1.html">
+                    <a class="gallery" target="_blank" href="Movie1.jsp">
                         <img class="gallery " src="Picture/Movie/shazam.jpg" alt="shazam" width="600" height="400">
                     </a>
                     <div class="shazam">shazam</div>
@@ -286,7 +286,7 @@ include('connect.php');
                                             </li>
                                         </ul>
                                         <ul class="time-list">
-                                        <form action="SeatSelection_thecruve.php" method="post">
+                                        <form action="SeatSelection_thecruve.jsp" method="post">
                         <input type="hidden" value = "The Cruse of Wwdding Women" name="name_movie">
                         <input type="hidden" value = "ENG/Soundtrack" name="sound">
                       <li class="time-item"><button class="button button-showtime" type="botton" name="button" value="12:20">12:20</button></li>
