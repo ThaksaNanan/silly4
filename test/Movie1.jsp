@@ -16,7 +16,7 @@ include('connect.php');
 
 <body>
   <div class="topnav" function slide()>
-    <a href="Homepage.php">Home</a>
+    <a href="Homepage.jsp">Home</a>
     <a href="#news">Movies</a>
     <a href="#contact">Contact</a>
     <a href="#about">About</a>
@@ -37,7 +37,7 @@ include('connect.php');
       </button>
       <div class="dropdown-content">
         <div class="gallery">
-          <a class="gallery" target="_blank" href="Movie1.php">
+          <a class="gallery" target="_blank" href="Movie1.jsp">
             <img class="gallery " src="Picture/Movie/shazam.jpg" alt="shazam" width="600" height="400">
           </a>
           <div class="shazam">shazam</div>
