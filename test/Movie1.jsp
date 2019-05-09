@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-include('connect.jsp');
+include('connect.php');
 ?>
 <head>
   <meta charset="UTF-8">
@@ -188,10 +188,10 @@ include('connect.jsp');
               <div class="main-detail">
                 <h1 class="name">Shazam!</h1>
               </div>
-              <p class="genre">หมวดหมู่: Action</p>
+              <p class="genre">Genre: Action</p>
               <ul class="movie-detail-list">
-                <li class="list-item">เรทผู้ชม: 13</li>
-              </ul><a href="M1Daetail.html" class="button button-gray-trans button-movie-details">รายละเอียดภาพยนตร์</a>
+                <li class="list-item">Rate: 13</li>
+              </ul><a href="M1Daetail.html" class="button button-gray-trans button-movie-details">MOVIE DETAIL</a>
             </div>
           </div>
         </div>
@@ -200,13 +200,13 @@ include('connect.jsp');
   </div>
   <div class="container3">
     <div class="showtime-box">
-      <div class="showtime-header">ภาคเหนือ
+      <div class="showtime-header">Northern Region
         <div class="showtime-arrow open"></div>
       </div>
       <div id="list-0000000008">
         <div>
           <div class="showtime-cinema">
-            เมเจอร์ ซีนีเพล็กซ์ เซ็นทรัล </div>
+            Major Cineplex Central </div>
           <div class="showtime-list">
             <div class="showtime-item">
               <div class="row">
@@ -283,7 +283,7 @@ include('connect.jsp');
                       </li>
                     </ul>
                     <ul class="time-list">
-                        <form action="SeatSelection_shazam.jsp" method="post">
+                        <form action="SeatSelection_shazam.php" method="post">
                         <input type="hidden" value = "Shazam!" name="name_movie">
                         <input type="hidden" value = "ENG/Soundtrack" name="sound">
                       <li class="time-item"><button class="button button-showtime" type="botton" name="button" value="12:20">12:20</button></li>
