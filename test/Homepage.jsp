@@ -71,7 +71,7 @@
                     <h2 class="name">On Zon De</h2>
                   </div>
                 </a></div>
-              <div class="movie-card flex-item" type="now-showing"><a href="Movie3.php" class=""
+              <div class="movie-card flex-item" type="now-showing"><a href="Movie3.jsp" class=""
                   title="Avengers : Endgame">
                   <div class="poster">
                       <img class="image" src="Movie/Avengers-Endgame.jpg" >
@@ -110,7 +110,7 @@
                     <h2 class="name">Fight for family</h2>
                   </div>
                 </a></div>
-              <div class="movie-card flex-item" type="now-showing"><a href="Movie5.php" class=""
+              <div class="movie-card flex-item" type="now-showing"><a href="Movie5.jsp" class=""
                   title="Five Feet Apart">
                   <div class="poster">
                       <img class="image" src="Movie/Foot.jpg" >
@@ -244,7 +244,7 @@
 <?php
 if(isset($_POST['submit'])){
 session_start();
-include ('connect.php');
+include ('connect.jsp');
  
 $strSQL = "SELECT * FROM member WHERE Member_User = '".mysqli_real_escape_string($con,$_POST['txtUser'])."'
 and Member_Password = '".mysqli_real_escape_string($con,$_POST['txtPsw'])."'";
