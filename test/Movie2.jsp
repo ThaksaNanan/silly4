@@ -184,12 +184,12 @@ include('connect.jsp');
             </div>
             <div class="movie-detail">
               <div class="main-detail">
-                <h1 class="name">โปเกมอน ยอดนักสืบพิคาชู</h1>
+                <h1 class="name">Pokemon Detective Pikachu</h1>
               </div>
-              <p class="genre">หมวดหมู่: Action</p>
+              <p class="genre">Genre: Action</p>
               <ul class="movie-detail-list">
-                <li class="list-item">เรทผู้ชม: G</li>
-              </ul><a href="M2Daetail.html" class="button button-gray-trans button-movie-details">รายละเอียดภาพยนตร์</a>
+                <li class="list-item">Rate: G</li>
+              </ul><a href="M2Daetail.html" class="button button-gray-trans button-movie-details">MOVIE DETAIL</a>
             </div>
           </div>
         </div>
@@ -204,7 +204,7 @@ include('connect.jsp');
       <div id="list-0000000008">
         <div>
           <div class="showtime-cinema">
-            เมเจอร์ ซีนีเพล็กซ์ เซ็นทรัล </div>
+            Northern Region </div>
           <div class="showtime-list">
             <div class="showtime-item">
               <div class="row">
