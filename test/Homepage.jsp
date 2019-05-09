@@ -20,7 +20,7 @@
         <div class="row">
           <div class="col-sm-9 equal-column column-movie grid-movies" style="min-height: 1486.7px;">
             <div class="flex-wrapper movies-wrapper movies-now-showing">
-              <div class="movie-card flex-item" type="now-showing"><a href="Movie1.php" class=""
+              <div class="movie-card flex-item" type="now-showing"><a href="Movie1.jsp" class=""
                   title="Shazam">
                   <div class="poster">
                     <img class="image" src="Movie/shazam.jpg" >
@@ -45,7 +45,7 @@
                     <h2 class="name">Teen Spirit</h2>
                   </div>
                 </a></div>
-              <div class="movie-card flex-item" type="now-showing"><a href="Movie2.php" class=""
+              <div class="movie-card flex-item" type="now-showing"><a href="Movie2.jsp" class=""
                   title="Pokemon Detective Pikachu">
                   <div class="poster">
                       <img class="image" src="Movie/Pokemon.jpg" >
