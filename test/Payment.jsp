@@ -13,7 +13,7 @@
 </head>
 <body >
         <div class="topnav" function slide()>
-                <a href="#home">Home</a>
+                <a href="Homepage.jsp">Home</a>
                 <a href="#news">Movies</a>
                 <a href="#contact">Contact</a>
                 <a href="#about">About</a>
