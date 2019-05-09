@@ -204,7 +204,7 @@ include('connect.jsp');
       <div id="list-0000000008">
         <div>
           <div class="showtime-cinema">
-            Northern Region </div>
+            Major Cineplex Central </div>
           <div class="showtime-list">
             <div class="showtime-item">
               <div class="row">
