@@ -43,21 +43,21 @@
         </div>
 
         <div class="gallery">
-          <a class="gallery" target="_blank" href="Picture/Movie/capmar.jpg">
+          <a class="gallery" target="_blank" href="Movie2.jpg">
             <img class="gallery " src="Picture/Movie/capmar.jpg" alt="capmar" width="600" height="400">
           </a>
           <div class="capmar">Captain Marvel</div>
         </div>
 
         <div class="gallery">
-          <a class="gallery" target="_blank" href="Picture/Movie/dumbo.jpg">
+          <a class="gallery" target="_blank" href="Movie3.jpg">
             <img class="gallery " src="Picture/Movie/dumbo.jpg" alt="dumbo" width="600" height="400">
           </a>
           <div class="dumbo">dumbo</div>
         </div>
 
         <div class="gallery">
-          <a class="gallery" target="_blank" href="Picture/Movie/saeng-krasue.jpg">
+          <a class="gallery" target="_blank" href="Movie4.jpg">
             <img class="gallery" src="Picture/Movie/saeng-krasue.jpg" alt="saeng-krasue" width="600" height="400">
           </a>
           <br>
@@ -65,44 +65,14 @@
         </div>
 
         <div class="gallery">
-          <a class="gallery" target="_blank" href="Picture/Movie/theking.jpg">
+          <a class="gallery" target="_blank" href="Movie5.jpg">
             <img class="gallery" src="Picture/Movie/theking.jpg" alt="theking" width="600" height="400">
           </a>
           <div class="theking">The Kid Who Would Be King</div>
         </div>
 
       </div>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn">Cinema
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <div class="header">
-        </div>
-      </div>
-    </div>
-    <button class="dropbtn2" style="
-      
-      width: 198.314px;
-      height: 58px;
-      margin-bottom: 0px;
-      padding-bottom: 20px;
-      margin-top: 0px;
-      border-bottom-width: 0px;
-      padding-top: 9px;
-      padding-left: 70px;
-      padding-right: 70px;
-      margin-left: 14px;
-  
-  "><span>check</span>
-    </button>
-    <div class="search-container">
-      <form action="/action_page.php">
-        <input type="text" placeholder="Search.." name="search" style="width : 216px">
-        <button type="submit" style="width : 37px;"><i class="fa fa-search"></i></button>
-      </form>
-    </div>
+    </div> 
   </div>
 
   <div class="slideshow-container">
@@ -228,7 +198,7 @@
         <div class="row">
           <div class="col-sm-9 equal-column column-movie grid-movies" style="min-height: 1486.7px;">
             <div class="flex-wrapper movies-wrapper movies-now-showing">
-              <div class="movie-card flex-item" type="now-showing"><a href="Movie1.html" class=""
+              <div class="movie-card flex-item" type="now-showing"><a href="Movie1.php" class=""
                   title="Shazam">
                   <div class="poster">
                     <img class="image" src="Movie/shazam.jpg" >
@@ -239,9 +209,10 @@
                     <h2 class="name">Shazam</h2>
                   </div>
                 </a></div>
-              <div class="movie-card flex-item" type="now-showing"><a href="/showtime/movie/HO00000436" class=""
+              <div class="movie-card flex-item" type="now-showing"><a href="#teen" class=""
                   title="ทีน สปิริต">
                   <div class="poster">
+
                       <img class="image" src="Movie/Teen.jpg" >
                     
                     
@@ -252,7 +223,7 @@
                     <h2 class="name">ทีน สปิริต</h2>
                   </div>
                 </a></div>
-              <div class="movie-card flex-item" type="now-showing"><a href="/showtime/movie/HO00000488" class=""
+              <div class="movie-card flex-item" type="now-showing"><a href="Movie2.php" class=""
                   title="โปเกมอน ยอดนักสืบพิคาชู">
                   <div class="poster">
                       <img class="image" src="Movie/Pokemon.jpg" >
@@ -265,7 +236,7 @@
                     <h2 class="name">โปเกมอน ยอดนักสืบพิคาชู</h2>
                   </div>
                 </a></div>
-              <div class="movie-card flex-item" type="now-showing"><a href="/showtime/movie/HO00000504" class=""
+              <div class="movie-card flex-item" type="now-showing"><a href="#oon" class=""
                   title="ออนซอนเด">
                   <div class="poster">
                       <img class="image" src="Movie/On.jpg" >
@@ -278,7 +249,7 @@
                     <h2 class="name">ออนซอนเด</h2>
                   </div>
                 </a></div>
-              <div class="movie-card flex-item" type="now-showing"><a href="/showtime/movie/HO00000264" class=""
+              <div class="movie-card flex-item" type="now-showing"><a href="Movie3.php" class=""
                   title="อเวนเจอร์ส: เผด็จศึก">
                   <div class="poster">
                       <img class="image" src="Movie/Avengers-Endgame.jpg" >
@@ -291,7 +262,7 @@
                     <h2 class="name">อเวนเจอร์ส: เผด็จศึก</h2>
                   </div>
                 </a></div>
-              <div class="movie-card flex-item" type="now-showing"><a href="/showtime/movie/HO00000349" class=""
+              <div class="movie-card flex-item" type="now-showing"><a href="Movie4.php" class=""
                   title="คำสาปมรณะจากหญิงร่ำไห้">
                   <div class="poster">
                       <img class="image" src="Movie/Ying.jpg" >
@@ -304,7 +275,7 @@
                     <h2 class="name">คำสาปมรณะจากหญิงร่ำไห้</h2>
                   </div>
                 </a></div>
-              <div class="movie-card flex-item" type="now-showing"><a href="/showtime/movie/HO00000448" class=""
+              <div class="movie-card flex-item" type="now-showing"><a href="#family" class=""
                   title="สู้ท้าฝัน เพื่อ ครอบครัว">
                   <div class="poster">
                       <img class="image" src="Movie/Family.jpg" >
@@ -317,7 +288,7 @@
                     <h2 class="name">สู้ท้าฝัน เพื่อ ครอบครัว</h2>
                   </div>
                 </a></div>
-              <div class="movie-card flex-item" type="now-showing"><a href="/showtime/movie/HO00000363" class=""
+              <div class="movie-card flex-item" type="now-showing"><a href="Movie5.php" class=""
                   title="ขออีกฟุตให้หัวใจเราใกล้กัน">
                   <div class="poster">
                       <img class="image" src="Movie/Foot.jpg" >
