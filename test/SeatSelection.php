@@ -14,28 +14,7 @@ include('connect.php');
   <link rel="stylesheet" type="text/css" media="screen" href="Homepage.css">
   <link rel="stylesheet" type="text/css" media="screen" href="SeatSelection.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script >
-  
-$(document).ready(function() {
-
-$("button").click(function(){
-    var seat = [];
-    $.each($("input[name='seat']:checked"), function(){
-        seat.push($(this).val());
-    });
-    var numberNotChecked = $('input:checkbox:not(":checked")').length;
-    var numberOfChecked = $('input:checkbox:checked').length;
-
-    let selectedseat = document.getElementById('selected-seat');
-    let totalprice = document.getElementById('total-price');
-
-    selectedseat.innerText =  seat.join(", ");
-    totalprice.innerText =  100*(20-numberNotChecked);
-
-   alert("You choose seat : " + seat.join(", ") +"  "+100*(20-numberNotChecked));
-});
-});
-  </script>
+  <script src="SeatSelection.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
 </head>
@@ -198,7 +177,7 @@ $("button").click(function(){
                 <ul class="info-list">
                   <li>04 พฤษภาคม 2019</li>
                   <li ><?php echo $_POST["sound"]; ?></li>
-                  <li ><?php echo $_POST["button"]; ?></li> 
+                  <li ><?php echo $_POST["button"]; ?></li>
                 </ul>
               </div>
               <div class="summary-selected" style = "margin-top: 0px;">

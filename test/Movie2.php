@@ -11,12 +11,12 @@ include('connect.php');
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="Homepage.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script language="JavaScript" type="text/javascript" src="SeatSelection.js"></script>
+  <script src="script.js"></script>
 </head>
 
 <body>
   <div class="topnav" function slide()>
-    <a href="Homepage.php">Home</a>
+    <a href="Homepage.html">Home</a>
     <a href="#news">Movies</a>
     <a href="#contact">Contact</a>
     <a href="#about">About</a>
@@ -281,7 +281,7 @@ include('connect.php');
                       </li>
                     </ul>
                     <ul class="time-list">
-                    <form action="SeatSelection_pokemon.php" method="post">
+                    <form action="SeatSelection.php" method="post">
                         <input type="hidden" value = "Pikachu!" name="name_movie">
                         <input type="hidden" value = "ENG/Soundtrack" name="sound">
                       <li class="time-item"><button class="button button-showtime" type="botton" name="button" value="12:20">12:20</button></li>
