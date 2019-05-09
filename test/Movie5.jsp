@@ -186,13 +186,13 @@ include('connect.jsp');
                                 </div>
                                 <div class="movie-detail">
                                     <div class="main-detail">
-                                        <h1 class="name">ขออีกฟุตให้หัวใจเราใกล้กัน</h1>
+                                        <h1 class="name">Five Feet Apart</h1>
                                     </div>
-                                    <p class="genre">หมวดหมู่: Drama</p>
+                                    <p class="genre">Genre: Drama</p>
                                     <ul class="movie-detail-list">
-                                        <li class="list-item">เรทผู้ชม: 13</li>
+                                        <li class="list-item">Rate: 13</li>
                                     </ul><a href="M5Daetail.html"
-                                        class="button button-gray-trans button-movie-details">รายละเอียดภาพยนตร์</a>
+                                        class="button button-gray-trans button-movie-details">MOVIE DETAIL</a>
                                 </div>
                             </div>
                         </div>
@@ -203,13 +203,13 @@ include('connect.jsp');
     </div>
     <div class="container3">
         <div class="showtime-box">
-            <div class="showtime-header">ภาคเหนือ
+            <div class="showtime-header">Northern Region
                 <div class="showtime-arrow open"></div>
             </div>
             <div id="list-0000000008">
                 <div>
                     <div class="showtime-cinema">
-                        เมเจอร์ ซีนีเพล็กซ์ เซ็นทรัล </div>
+                        Major Cineplex Central </div>
                     <div class="showtime-list">
                         <div class="showtime-item">
                             <div class="row">
