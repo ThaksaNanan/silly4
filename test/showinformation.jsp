@@ -1,5 +1,5 @@
 <?php
-include('connect.php');
+include('connect.jsp');
 $movie = "SELECT * FROM booking order by bk_No DESC";
 $objQuery = mysqli_query($con,$movie);
 ?>
