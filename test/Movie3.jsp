@@ -188,7 +188,7 @@ include('connect.jsp');
                                     <div class="main-detail">
                                         <h1 class="name">Avengers : Endgame</h1>
                                     </div>
-                                    <p class="genre">หมวดหมู่: Action</p>
+                                    <p class="genre">Genre: Action</p>
                                     <ul class="movie-detail-list">
                                         <li class="list-item">Rate: 13</li>
                                     </ul><a href="M3Daetail.html"
