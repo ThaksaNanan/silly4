@@ -198,7 +198,7 @@ include('connect.jsp');
   </div>
   <div class="container3">
     <div class="showtime-box">
-      <div class="showtime-header">ภาคเหนือ
+      <div class="showtime-header">Northern Region
         <div class="showtime-arrow open"></div>
       </div>
       <div id="list-0000000008">
