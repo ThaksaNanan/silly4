@@ -196,7 +196,7 @@ $("button").click(function(){
               <div class="summary-info">
                 <h2 class="movie-name"><?php echo $_POST["name_movie"]; ?></h2><br>
                 <ul class="info-list">
-                  <li>04 พฤษภาคม 2019</li>
+                  <li>04 May 2019</li>
                   <li ><?php echo $_POST["sound"]; ?></li>
                   <li ><?php echo $_POST["button"]; ?></li> 
                 </ul>
@@ -204,22 +204,21 @@ $("button").click(function(){
               <div class="summary-selected" style = "margin-top: 0px;">
                 <div class="inner">
                   <div class="selected">
-                    <h3 class="heading">ที่นั่งที่เลือก</h3>
+                    <h3 class="heading">Selected Seat</h3>
                     <ul class="selected-seat">
                       <li><label id="selected-seat">-</label></li>
                     </ul>
                   </div>
                   <div class="price">
-                    <h3 class="heading">ราคารวม</h3>
+                    <h3 class="heading">Total</h3>
                     <p class="total-price"><label id="total-price">0</label></p>
                   </div>
                   <div class="action">
                     <div class="col"><button type="button"
-                        class="button button-blue-trans button-promotion btn-block"><span class="text">ส่วนลด
-                          และโปรโมชั่น</span>
+                        class="button button-blue-trans button-promotion btn-block"><span class="text">Discounts and Promotions</span>
                         <!----></button></div>
                     <div class="col"><button type="button" disabled="disabled"
-                        class="button button-blue button-continue btn-block">ดำเนินการต่อ</button></div>
+                        class="button button-blue button-continue btn-block">Continue</button></div>
                   </div>
                 </div>
               </div>
