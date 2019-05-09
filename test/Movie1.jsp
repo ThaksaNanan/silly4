@@ -283,7 +283,7 @@ include('connect.jsp');
                       </li>
                     </ul>
                     <ul class="time-list">
-                        <form action="SeatSelection_shazam.php" method="post">
+                        <form action="SeatSelection_shazam.jsp" method="post">
                         <input type="hidden" value = "Shazam!" name="name_movie">
                         <input type="hidden" value = "ENG/Soundtrack" name="sound">
                       <li class="time-item"><button class="button button-showtime" type="botton" name="button" value="12:20">12:20</button></li>
