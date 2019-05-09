@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
- include('connect.php');
+ include('connect.jsp');
  $INFO_MEMBER = "SELECT Member_ID FROM member " ;
  $NAME = mysqli_query($con, $INFO_MEMBER);
 ?>
@@ -19,7 +19,7 @@
 
 <body>
   <div class="topnav" function slide()>
-      <a href="Homepage.php">Home</a>
+      <a href="Homepage.jsp">Home</a>
     <a href="#news">Movies</a>
     <a href="#contact">Contact</a>
     <a href="#about">About</a>
@@ -41,7 +41,7 @@
       </button>
       <div class="dropdown-content">
         <div class="gallery">
-          <a class="gallery" target="_blank" href="Movie1.php">
+          <a class="gallery" target="_blank" href="Movie1.jsp">
             <img class="gallery " src="Picture/Movie/shazam.jpg" alt="shazam" width="600" height="400">
           </a>
           <div class="shazam">shazam</div>
@@ -201,149 +201,148 @@
   <div class="top-wrapper">
     <div class="section section-movie ov-gap">
       <div class="container4">
-          <div class="section-header"><h1 class="heading">Movie</h1></div>
+          <div class="section-header"><h1 class="heading">ภาพยนตร์</h1></div>
         <div class="row">
           <div class="col-sm-9 equal-column column-movie grid-movies" style="min-height: 1486.7px;">
             <div class="flex-wrapper movies-wrapper movies-now-showing">
-              <div class="movie-card flex-item" type="now-showing"><a href="Movie1.php" class=""
+              <div class="movie-card flex-item" type="now-showing"><a href="Movie1.jsp" class=""
                   title="Shazam">
                   <div class="poster">
                     <img class="image" src="Movie/shazam.jpg" >
                     </div>
                   <div class="info">
-                    <p class="release-date"><span >Release Date: </span><span
+                    <p class="release-date"><span >วันที่เข้าฉาย: </span><span
                         class="date">2019-05-09</span></p>
                     <h2 class="name">Shazam</h2>
                   </div>
                 </a></div>
-              <div class="movie-card flex-item" type="now-showing"><a href="#teen" class=""
-                  title="Teen Spirit">
+              <div class="movie-card flex-item" type="now-showing"><a href="/showtime/movie/HO00000436" class=""
+                  title="ทีน สปิริต">
                   <div class="poster">
-
                       <img class="image" src="Movie/Teen.jpg" >
                     
                     
                   </div>
                   <div class="info">
-                    <p class="release-date"><span >Release Date: </span><span
+                    <p class="release-date"><span >วันที่เข้าฉาย: </span><span
                         class="date">2019-05-02</span></p>
-                    <h2 class="name">Teen Spirit</h2>
+                    <h2 class="name">ทีน สปิริต</h2>
                   </div>
                 </a></div>
-              <div class="movie-card flex-item" type="now-showing"><a href="Movie2.php" class=""
-                  title="Pokemon Detective Pikachu">
+              <div class="movie-card flex-item" type="now-showing"><a href="pokemon.jsp" class=""
+                  title="โปเกมอน ยอดนักสืบพิคาชู">
                   <div class="poster">
                       <img class="image" src="Movie/Pokemon.jpg" >
                     
                     
                   </div>
                   <div class="info">
-                    <p class="release-date"><span >Release Date: </span><span
+                    <p class="release-date"><span >วันที่เข้าฉาย: </span><span
                         class="date">2019-05-02</span></p>
-                    <h2 class="name">Pokemon Detective Pikachu</h2>
+                    <h2 class="name">โปเกมอน ยอดนักสืบพิคาชู</h2>
                   </div>
                 </a></div>
-              <div class="movie-card flex-item" type="now-showing"><a href="#oon" class=""
-                  title="On Zon De">
+              <div class="movie-card flex-item" type="now-showing"><a href="/showtime/movie/HO00000504" class=""
+                  title="ออนซอนเด">
                   <div class="poster">
                       <img class="image" src="Movie/On.jpg" >
                     
                     <!---->
                   </div>
                   <div class="info">
-                    <p class="release-date"><span >Release Date: </span><span
+                    <p class="release-date"><span >วันที่เข้าฉาย: </span><span
                         class="date">2019-05-01</span></p>
-                    <h2 class="name">On Zon De</h2>
+                    <h2 class="name">ออนซอนเด</h2>
                   </div>
                 </a></div>
-              <div class="movie-card flex-item" type="now-showing"><a href="Movie3.php" class=""
-                  title="Avengers : Endgame">
+              <div class="movie-card flex-item" type="now-showing"><a href="Avenger.jsp" class=""
+                  title="อเวนเจอร์ส: เผด็จศึก">
                   <div class="poster">
                       <img class="image" src="Movie/Avengers-Endgame.jpg" >
                      
                     <!---->
                   </div>
                   <div class="info">
-                    <p class="release-date"><span >Release Date: </span><span
+                    <p class="release-date"><span >วันที่เข้าฉาย: </span><span
                         class="date">2019-04-24</span></p>
-                    <h2 class="name">Avengers : Endgame</h2>
+                    <h2 class="name">อเวนเจอร์ส: เผด็จศึก</h2>
                   </div>
                 </a></div>
-              <div class="movie-card flex-item" type="now-showing"><a href="Movie4.php" class=""
-                  title="The Curse of The Weeping Woman">
+              <div class="movie-card flex-item" type="now-showing"><a href="thecruve.jsp" class=""
+                  title="คำสาปมรณะจากหญิงร่ำไห้">
                   <div class="poster">
                       <img class="image" src="Movie/Ying.jpg" >
                      
                     <!---->
                   </div>
                   <div class="info">
-                    <p class="release-date"><span >Release Date: </span><span
+                    <p class="release-date"><span >วันที่เข้าฉาย: </span><span
                         class="date">2019-04-18</span></p>
-                    <h2 class="name">The Curse of The Weeping Woman</h2>
+                    <h2 class="name">คำสาปมรณะจากหญิงร่ำไห้</h2>
                   </div>
                 </a></div>
-              <div class="movie-card flex-item" type="now-showing"><a href="#family" class=""
-                  title="Fight for family">
+              <div class="movie-card flex-item" type="now-showing"><a href="/showtime/movie/HO00000448" class=""
+                  title="สู้ท้าฝัน เพื่อ ครอบครัว">
                   <div class="poster">
                       <img class="image" src="Movie/Family.jpg" >
                    
                     <!---->
                   </div>
                   <div class="info">
-                    <p class="release-date"><span >Release Date: </span><span
+                    <p class="release-date"><span >วันที่เข้าฉาย: </span><span
                         class="date">2019-04-18</span></p>
-                    <h2 class="name">Fight for family</h2>
+                    <h2 class="name">สู้ท้าฝัน เพื่อ ครอบครัว</h2>
                   </div>
                 </a></div>
-              <div class="movie-card flex-item" type="now-showing"><a href="Movie5.php" class=""
-                  title="Five Feet Apart">
+              <div class="movie-card flex-item" type="now-showing"><a href="fivefeet" class=""
+                  title="ขออีกฟุตให้หัวใจเราใกล้กัน">
                   <div class="poster">
                       <img class="image" src="Movie/Foot.jpg" >
                      
                     <!---->
                   </div>
                   <div class="info">
-                    <p class="release-date"><span >Release Date: </span><span
+                    <p class="release-date"><span >วันที่เข้าฉาย: </span><span
                         class="date">2019-04-18</span></p>
-                    <h2 class="name">Five Feet Apart</h2>
+                    <h2 class="name">ขออีกฟุตให้หัวใจเราใกล้กัน</h2>
                   </div>
                 </a></div>
               <div class="movie-card flex-item" type="now-showing"><a href="/showtime/movie/HO00000435" class=""
-                  title="Samson">
+                  title="แซมซั่น มนุษย์พลังเทพ">
                   <div class="poster">
                       <img class="image" src="Movie/Samsom.jpg" >
                     
                     <!---->
                   </div>
                   <div class="info">
-                    <p class="release-date"><span >Release Date: </span><span
+                    <p class="release-date"><span >วันที่เข้าฉาย: </span><span
                         class="date">2019-04-18</span></p>
-                    <h2 class="name">Samson</h2>
+                    <h2 class="name">แซมซั่น มนุษย์พลังเทพ</h2>
                   </div>
                 </a></div>
               <div class="movie-card flex-item" type="now-showing"><a href="/showtime/movie/HO00000314" class=""
-                  title="Hellboy">
+                  title="เฮลล์บอย">
                   <div class="poster">
                       <img class="image" src="Movie/Hellboy.jpg" >
                      
                     <!---->
                   </div>
                   <div class="info">
-                    <p class="release-date"><span >Release Date: </span><span
+                    <p class="release-date"><span >วันที่เข้าฉาย: </span><span
                         class="date">2019-04-11</span></p>
-                    <h2 class="name">Hellboy</h2>
+                    <h2 class="name">เฮลล์บอย</h2>
                   </div>
                 </a></div>
               <div class="movie-card flex-item" type="now-showing"><a href="/showtime/movie/HO00000263" class=""
-                  title="Captain Marvel">
+                  title="กัปตัน มาร์เวล">
                   <div class="poster">
                       <img class="image" src="Movie/capmar.jpg" >
                     <!---->
                   </div>
                   <div class="info">
-                    <p class="release-date"><span >Release Date: </span><span
+                    <p class="release-date"><span >วันที่เข้าฉาย: </span><span
                         class="date">2019-03-06</span></p>
-                    <h2 class="name">Captain Marvel</h2>
+                    <h2 class="name">กัปตัน มาร์เวล</h2>
                   </div>
                 </a></div>
             </div>
@@ -362,10 +361,10 @@
             <h3 class="txttopicfmenu">Site Index</h3>
           </div>
           <div class="eachmenu">
-            <a href="#" class="btnlinkfmenu">CINEMA</a>
-            <a href="#" class="btnlinkfmenu">Movie</a>
-            <a href="#" class="btnlinkfmenu">Promotion</a>
-            <a href="#" class="btnlinkfmenu">News and Activity</a>
+            <a href="#" class="btnlinkfmenu">โรงภาพยนต์</a>
+            <a href="#" class="btnlinkfmenu">ภาพยนต์</a>
+            <a href="#" class="btnlinkfmenu">โปรโมชั่น</a>
+            <a href="#" class="btnlinkfmenu">ข่าวและกิจกรรม</a>
             <!-- <a href="javascript:;" class="btnlinkfmenu">Shopping</a> -->
           </div>
         </div>
