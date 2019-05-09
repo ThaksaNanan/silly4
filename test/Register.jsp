@@ -42,7 +42,7 @@
 </html>
 <?php
 if(isset($_POST['txtUsername'])){
-include('connect.php');
+include('connect.jsp');
 if(trim($_POST["txtUsername"]) == "")
 	{
 		$message= "Please input Username!";
