@@ -16,7 +16,7 @@ include('connect.jsp');
 
 <body>
     <div class="topnav" function slide()>
-        <a href="Homepage.php">Home</a>
+        <a href="Homepage.jsp">Home</a>
         <a href="#news">Movies</a>
         <a href="#contact">Contact</a>
         <a href="#about">About</a>
