@@ -6,7 +6,7 @@
 <body>
   <div class="form">
     <center>
-<form name="form1" method="post" action="saveRegister.php" style="
+<form name="form1" method="post" style="
     margin-top: 10px;
 ">
   Register Form <br><br>
@@ -40,3 +40,27 @@
 </div>
 </body>
 </html>
+<?php
+if(isset($_POST['txtUsername'])){
+include('connect.php');
+if(trim($_POST["txtUsername"]) == "")
+	{
+		$message= "Please input Username!";
+		echo "<script type='text/javascript'>alert('$message');</script>";
+	}else if(trim($_POST["txtPassword"]) == ""){
+		$message=  "Please input Password!";
+		echo "<script type='text/javascript'>alert('$message');</script>";
+	}	else if($_POST["txtPassword"] != $_POST["txtConPassword"]){
+		$message=  "Password not Match!";
+		echo "<script type='text/javascript'>alert('$message');</script>";
+	}else{
+	$sql = "INSERT INTO member (Member_ID, Member_User, Member_Password,Member_Status)
+    VALUES (null,'".$_POST['txtUsername']."', '".$_POST['txtPassword']."','user')";
+	if($con->query($sql) === TRUE){
+        $message = "Register is complete!!!";
+        echo "<script type='text/javascript'>alert('$message');</script>";
+      }
+      $con->close();
+    }
+  }
+?>
