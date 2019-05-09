@@ -1,109 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="icon" href="Picture/icon/Movie 3.ico" type="image/x-icon">
-  <meta charset="utf-8">
+<link rel="icon" href="Picture/icon/Movie 3.ico" type="image/x-icon">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Homepage</title>
+  <title>Shazam</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="Homepage.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="script.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="includehtml.js"></script>
+  
+  <script language="JavaScript" type="text/javascript" src="SeatSelection.js  "></script>
 </head>
 
 <body>
-  <div class="topnav" function slide()>
-      <a href="Homepage.php">Home</a>
-    <a href="#news">Movies</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
-    <div class="topnav-right">
-      <img src="Picture/icon/Logo-Celebrating-20th-MFU-01.png" class="icon" style="width: 49px;height: 44px;">
-      <img src="Picture/icon/it.gif" class="icon" style="width: 49px;height: 44px;">
-      <img src="Picture/icon/SE.jpg" class="icon" style="width: 84px;height: 71.25;">
-      <div class="topnav-right">
-      <a href="Register.php">Register</a>
-        <a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
-      </div>
-    </div>
-  </div>
-  <br><br>
-  <div class="search" style="    width: 1250px;height: 48px;margin-left: 55px;">
-    <div class="dropdown ">
-      <button class="dropbtn">Movies
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <div class="gallery">
-          <a class="gallery" target="_blank" href="Movie1.php">
-            <img class="gallery " src="Picture/Movie/shazam.jpg" alt="shazam" width="600" height="400">
-          </a>
-          <div class="shazam">shazam</div>
-        </div>
+<div id="Nav-bar"></div>
+<div id="Search-bar"></div>
 
-        <div class="gallery">
-          <a class="gallery" target="_blank" href="Picture/Movie/capmar.jpg">
-            <img class="gallery " src="Picture/Movie/capmar.jpg" alt="capmar" width="600" height="400">
-          </a>
-          <div class="capmar">Captain Marvel</div>
-        </div>
-
-        <div class="gallery">
-          <a class="gallery" target="_blank" href="Picture/Movie/dumbo.jpg">
-            <img class="gallery " src="Picture/Movie/dumbo.jpg" alt="dumbo" width="600" height="400">
-          </a>
-          <div class="dumbo">dumbo</div>
-        </div>
-
-        <div class="gallery">
-          <a class="gallery" target="_blank" href="Picture/Movie/saeng-krasue.jpg">
-            <img class="gallery" src="Picture/Movie/saeng-krasue.jpg" alt="saeng-krasue" width="600" height="400">
-          </a>
-          <br>
-          <div class="saeng">saeng-krasue</div>
-        </div>
-
-        <div class="gallery">
-          <a class="gallery" target="_blank" href="Picture/Movie/theking.jpg">
-            <img class="gallery" src="Picture/Movie/theking.jpg" alt="theking" width="600" height="400">
-          </a>
-          <div class="theking">The Kid Who Would Be King</div>
-        </div>
-
-      </div>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn">Cinema
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <div class="header">
-        </div>
-      </div>
-    </div>
-    <button class="dropbtn2" style="
-      
-      width: 198.314px;
-      height: 58px;
-      margin-bottom: 0px;
-      padding-bottom: 20px;
-      margin-top: 0px;
-      border-bottom-width: 0px;
-      padding-top: 9px;
-      padding-left: 70px;
-      padding-right: 70px;
-      margin-left: 14px;
-  
-  "><span>check</span>
-    </button>
-    <div class="search-container">
-      <form action="/action_page.php">
-        <input type="text" placeholder="Search.." name="search" style="width : 216px">
-        <button type="submit" style="width : 37px;"><i class="fa fa-search"></i></button>
-      </form>
-    </div>
-  </div>
 
   <div class="slideshow-container">
 
@@ -183,7 +96,7 @@
   </script>
   <div id="id01" class="modal">
 <!-----------------------------Login page -------------------------->
-    <form class="modal-content animate" method="post" >
+    <form class="modal-content animate" method="post" action="check_login.php">
       <div class="imgcontainer">
         <span onclick="document.getElementById('id01').style.display='none'" class="close"
           title="Close Modal">&times;</span>
@@ -196,7 +109,7 @@
         <label for="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="txtPsw" id= "txtPassword" required>
 
-        <button type="submit" name="submit">Login</button>
+        <button type="submit">Login</button>
         <label>
         <a onclick="document.getElementById('id01').style.display='none';document.getElementById('id02').style.display='block'" style="width:auto;">Register</a>
   </label>
@@ -228,7 +141,7 @@
         <div class="row">
           <div class="col-sm-9 equal-column column-movie grid-movies" style="min-height: 1486.7px;">
             <div class="flex-wrapper movies-wrapper movies-now-showing">
-              <div class="movie-card flex-item" type="now-showing"><a href="Movie1.html" class=""
+              <div class="movie-card flex-item" type="now-showing"><a href="Movie1.php" class=""
                   title="Shazam">
                   <div class="poster">
                     <img class="image" src="Movie/shazam.jpg" >
@@ -239,9 +152,10 @@
                     <h2 class="name">Shazam</h2>
                   </div>
                 </a></div>
-              <div class="movie-card flex-item" type="now-showing"><a href="/showtime/movie/HO00000436" class=""
+              <div class="movie-card flex-item" type="now-showing"><a href="#teen" class=""
                   title="ทีน สปิริต">
                   <div class="poster">
+
                       <img class="image" src="Movie/Teen.jpg" >
                     
                     
@@ -252,7 +166,7 @@
                     <h2 class="name">ทีน สปิริต</h2>
                   </div>
                 </a></div>
-              <div class="movie-card flex-item" type="now-showing"><a href="/showtime/movie/HO00000488" class=""
+              <div class="movie-card flex-item" type="now-showing"><a href="Movie2.php" class=""
                   title="โปเกมอน ยอดนักสืบพิคาชู">
                   <div class="poster">
                       <img class="image" src="Movie/Pokemon.jpg" >
@@ -265,7 +179,7 @@
                     <h2 class="name">โปเกมอน ยอดนักสืบพิคาชู</h2>
                   </div>
                 </a></div>
-              <div class="movie-card flex-item" type="now-showing"><a href="/showtime/movie/HO00000504" class=""
+              <div class="movie-card flex-item" type="now-showing"><a href="#oon" class=""
                   title="ออนซอนเด">
                   <div class="poster">
                       <img class="image" src="Movie/On.jpg" >
@@ -278,7 +192,7 @@
                     <h2 class="name">ออนซอนเด</h2>
                   </div>
                 </a></div>
-              <div class="movie-card flex-item" type="now-showing"><a href="/showtime/movie/HO00000264" class=""
+              <div class="movie-card flex-item" type="now-showing"><a href="Movie3.php" class=""
                   title="อเวนเจอร์ส: เผด็จศึก">
                   <div class="poster">
                       <img class="image" src="Movie/Avengers-Endgame.jpg" >
@@ -291,7 +205,7 @@
                     <h2 class="name">อเวนเจอร์ส: เผด็จศึก</h2>
                   </div>
                 </a></div>
-              <div class="movie-card flex-item" type="now-showing"><a href="/showtime/movie/HO00000349" class=""
+              <div class="movie-card flex-item" type="now-showing"><a href="Movie4.php" class=""
                   title="คำสาปมรณะจากหญิงร่ำไห้">
                   <div class="poster">
                       <img class="image" src="Movie/Ying.jpg" >
@@ -304,7 +218,7 @@
                     <h2 class="name">คำสาปมรณะจากหญิงร่ำไห้</h2>
                   </div>
                 </a></div>
-              <div class="movie-card flex-item" type="now-showing"><a href="/showtime/movie/HO00000448" class=""
+              <div class="movie-card flex-item" type="now-showing"><a href="#family" class=""
                   title="สู้ท้าฝัน เพื่อ ครอบครัว">
                   <div class="poster">
                       <img class="image" src="Movie/Family.jpg" >
@@ -317,7 +231,7 @@
                     <h2 class="name">สู้ท้าฝัน เพื่อ ครอบครัว</h2>
                   </div>
                 </a></div>
-              <div class="movie-card flex-item" type="now-showing"><a href="/showtime/movie/HO00000363" class=""
+              <div class="movie-card flex-item" type="now-showing"><a href="Movie5.php" class=""
                   title="ขออีกฟุตให้หัวใจเราใกล้กัน">
                   <div class="poster">
                       <img class="image" src="Movie/Foot.jpg" >
@@ -448,21 +362,3 @@
 </body>
 
 </html>
-<?php
-if(isset($_POST['submit'])){
-session_start();
-include ('connect.php');
- 
-$strSQL = "SELECT * FROM member WHERE Member_User = '".mysqli_real_escape_string($con,$_POST['txtUser'])."'
-and Member_Password = '".mysqli_real_escape_string($con,$_POST['txtPsw'])."'";
-$objQuery = mysqli_query($con,$strSQL);
-$objResult = mysqli_fetch_array($objQuery,MYSQLI_ASSOC);
-if(!$objResult){
-    $message = "Username and Password Incorrect!";
-    echo "<script type='text/javascript'>alert('$message');</script>";
-    }else{
-        $message =  "Username and Password correct!";
-        echo "<script type='text/javascript'>alert('$message');</script>";
-}
-}
-?>

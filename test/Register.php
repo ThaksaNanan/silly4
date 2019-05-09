@@ -4,6 +4,7 @@
 <link rel="stylesheet" type="text/css" media="screen" href="finish.css">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
 <body>
+  
   <div class="form">
     <center>
 <form name="form1" method="post" style="
@@ -38,6 +39,9 @@
 </form>
 </center>
 </div>
+ <form>
+  <input type="button" value="Go back!" onclick="window.location.href='http://localhost/test/Homepage.php'">
+</form>
 </body>
 </html>
 <?php
