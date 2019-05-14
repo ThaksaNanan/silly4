@@ -17,7 +17,7 @@
 
 <body>
     <div class="topnav" function slide()>
-        <a href="Homepage.html">Home</a>
+        <a href="Homepage.jsp">Home</a>
         <a href="#news">Movies</a>
         <a href="#contact">Contact</a>
         <a href="#about">About</a>
@@ -38,28 +38,28 @@
             </button>
             <div class="dropdown-content">
                 <div class="gallery">
-                    <a class="gallery" target="_blank" href="Movie1.html">
+                    <a class="gallery" target="_blank" href="Movie1.jsp">
                         <img class="gallery " src="Picture/Movie/shazam.jpg" alt="shazam" width="600" height="400">
                     </a>
                     <div class="shazam">shazam</div>
                 </div>
 
                 <div class="gallery">
-                    <a class="gallery" target="_blank" href="Movie2.html">
+                    <a class="gallery" target="_blank" href="Movie2.jsp">
                         <img class="gallery " src="Movie/PokemonA.jpg" alt="โปเกมอน" width="600" height="400">
                     </a>
                     <div class="capmar">โปเกมอน ยอดนักสืบพิคาชู</div>
                 </div>
 
                 <div class="gallery">
-                    <a class="gallery" target="_blank" href="Movie3.html">
+                    <a class="gallery" target="_blank" href="Movie3.jsp">
                         <img class="gallery " src="Movie/Endgame.jpg" alt="อเวนเจอร์ส" width="600" height="400">
                     </a>
                     <div class="dumbo">อเวนเจอร์ส: เผด็จศึก</div>
                 </div>
 
                 <div class="gallery">
-                    <a class="gallery" target="_blank" href="Movie4.html">
+                    <a class="gallery" target="_blank" href="Movie4.jsp">
                         <img class="gallery" src="Movie/Ying.jpg" alt="คำสาปมรณะจากหญิงร่ำไห้" width="600" height="400">
                     </a>
                     <br>
@@ -67,7 +67,7 @@
                 </div>
 
                 <div class="gallery">
-                    <a class="gallery" target="_blank" href="Movie5.html">
+                    <a class="gallery" target="_blank" href="Movie5.jsp">
                         <img class="gallery" src="Movie/Foot.jpg" alt="ขออีกฟุตให้หัวใจเราใกล้กัน" width="600" height="400">
                     </a>
                     <div class="theking">ขออีกฟุตให้หัวใจเราใกล้กัน</div>
