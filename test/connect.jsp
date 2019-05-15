@@ -1,37 +1,32 @@
+<%@ page import = "java.sql.*" %>
 <html>
 <head>
 <title>ThaiCreate.Com</title>
 </head>
 <body>
 
-<?php
-$con = mysqli_connect("localhost","root","","silly4");
-
-// Check connection
-if (mysqli_connect_errno())
-  {
-  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-  }
-     
-
-
-
-
-
-/*
-$host = "localhost";
-$username = "root";
-$password = "";
-$objConnect = mysql_connect($localhost,$root,$password);
-if($objConnect){
-echo "MySQL Connected";
+<%
+Connection connect = null;
+try {
+Class.forName("com.mysql.jdbc.Driver");
+connect =  DriverManager.getConnection("jdbc:mysql://localhost/silly4" +"?user=root&password=");
+if(connect != null){
+out.println("Database Connected.");
+} else {
+out.println("Database Connect Failed.");
 }
-else
-{
-echo "MySQL Connect Failed : Error : ".mysql_error();
+} catch (Exception e) {
+// TODO Auto-generated catch block
+out.println(e.getMessage());
+e.printStackTrace();
 }
-mysql_close($objConnect);
-*/
-?>
+try {
+connect.close();
+} catch (SQLException e) {
+// TODO Auto-generated catch block
+out.println(e.getMessage());
+e.printStackTrace();
+}
+%>
 </body>
 </html>

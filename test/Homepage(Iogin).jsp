@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
- include('connect.jsp');
+ include('connect.php');
  $INFO_MEMBER = "SELECT Member_ID FROM member " ;
  $NAME = mysqli_query($con, $INFO_MEMBER);
 ?>
@@ -19,7 +19,7 @@
 
 <body>
   <div class="topnav" function slide()>
-      <a href="Homepage.jsp">Home</a>
+      <a href="Homepage.php">Home</a>
     <a href="#news">Movies</a>
     <a href="#contact">Contact</a>
     <a href="#about">About</a>
@@ -41,7 +41,7 @@
       </button>
       <div class="dropdown-content">
         <div class="gallery">
-          <a class="gallery" target="_blank" href="Movie1.jsp">
+          <a class="gallery" target="_blank" href="Movie1.php">
             <img class="gallery " src="Picture/Movie/shazam.jpg" alt="shazam" width="600" height="400">
           </a>
           <div class="shazam">shazam</div>
@@ -205,7 +205,7 @@
         <div class="row">
           <div class="col-sm-9 equal-column column-movie grid-movies" style="min-height: 1486.7px;">
             <div class="flex-wrapper movies-wrapper movies-now-showing">
-              <div class="movie-card flex-item" type="now-showing"><a href="Movie1.jsp" class=""
+              <div class="movie-card flex-item" type="now-showing"><a href="Movie1.html" class=""
                   title="Shazam">
                   <div class="poster">
                     <img class="image" src="Movie/shazam.jpg" >
@@ -229,7 +229,7 @@
                     <h2 class="name">ทีน สปิริต</h2>
                   </div>
                 </a></div>
-              <div class="movie-card flex-item" type="now-showing"><a href="pokemon.jsp" class=""
+              <div class="movie-card flex-item" type="now-showing"><a href="/showtime/movie/HO00000488" class=""
                   title="โปเกมอน ยอดนักสืบพิคาชู">
                   <div class="poster">
                       <img class="image" src="Movie/Pokemon.jpg" >
@@ -255,7 +255,7 @@
                     <h2 class="name">ออนซอนเด</h2>
                   </div>
                 </a></div>
-              <div class="movie-card flex-item" type="now-showing"><a href="Avenger.jsp" class=""
+              <div class="movie-card flex-item" type="now-showing"><a href="/showtime/movie/HO00000264" class=""
                   title="อเวนเจอร์ส: เผด็จศึก">
                   <div class="poster">
                       <img class="image" src="Movie/Avengers-Endgame.jpg" >
@@ -268,7 +268,7 @@
                     <h2 class="name">อเวนเจอร์ส: เผด็จศึก</h2>
                   </div>
                 </a></div>
-              <div class="movie-card flex-item" type="now-showing"><a href="thecruve.jsp" class=""
+              <div class="movie-card flex-item" type="now-showing"><a href="/showtime/movie/HO00000349" class=""
                   title="คำสาปมรณะจากหญิงร่ำไห้">
                   <div class="poster">
                       <img class="image" src="Movie/Ying.jpg" >
@@ -294,7 +294,7 @@
                     <h2 class="name">สู้ท้าฝัน เพื่อ ครอบครัว</h2>
                   </div>
                 </a></div>
-              <div class="movie-card flex-item" type="now-showing"><a href="fivefeet" class=""
+              <div class="movie-card flex-item" type="now-showing"><a href="/showtime/movie/HO00000363" class=""
                   title="ขออีกฟุตให้หัวใจเราใกล้กัน">
                   <div class="poster">
                       <img class="image" src="Movie/Foot.jpg" >

@@ -9,6 +9,7 @@
     <title>Homepage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="Payment.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="Bill.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js Payment.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -143,36 +144,31 @@ window.onclick = function(event) {
     }
 }
 </script>
+
 <div class="book_payment" style="display: block;">
 	<link rel="stylesheet"  href="#">
 	<div class="shopping_summary">
 		<div class="book_payment_head">
 			<h3>
-				"รายการสั่งซื้อทั้งหมด"
-				<span>กรุณาตรวจสอบก่อนจองหรือชำระเงิน</span>
+				"ใบเสร็จการสั่งซื้อ"
 			</h3>
 		</div>
 		<div class="shopping_summary_contain">
 			<div class="blogsummarycontain">
-				<div class="shop-seating-title">
-					<h3 class="txt-seating-title">
-										ประเภทที่นั่ง
-									</h3>
-				</div>
 				<div class="innersummary">
 					<div class="shop_seating">
-						<div class="shop_seating_img">
-							<img src="Picture/ad/chair.png">
+						<div class="shop_seating_img" style="width: 160px;">
+							<img src="Movie/Avengers-Endgame.jpg">
 						</div>
 						<div class="shop_seating_name">
+							<div class="shop_summary_price_text">
+							<img src="Picture/ad/QR.png">
+						</div>
+							<br><br><br><br><br><br><br>
 							<h3>Normal</h3>
 							<span class="grey_text">No.</span>
 							<span class="pink_text">D12</span>
 						</div>
-						<div class="shop_seating_price">
-							"														
-																						210"
-							<sup>THB</sup>
 						</div>
 						<div class="clr"></div>
 					</div>
@@ -180,11 +176,7 @@ window.onclick = function(event) {
 						<span id="summary_text" class="summary_title">
 											ราคาที่นั่งรวม
 										</span>
-						<div class="shop_summary_price_text">
-							"
-																	 210"
-							<sup>THB</sup>
-						</div>
+						
 					</div>
 					<div class="shopping_summary_price total_summary" style>
 						<div id="summary_text" class="to_text">ราคารวมสุทธิ
@@ -195,119 +187,22 @@ window.onclick = function(event) {
                            <sup>THB</sup>
               </div>
 						</div>
+
           </div>
 					</div>
 				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="bgpay">
-	<div class="book_payment_head">
-		<h3 class="popo">ยืนยันทำรายการ</h3>
-		<span class="popo">กรุณากรอกข้อมูลเพื่อใช้ในการรับตั๋ว</span>
-	</div>
-	<div class="book_payment_email" id="user-info">
-		<div class="book_payment_input">
-			<input type="text" class="book_payment name" placeholder="ชื่อ - นามสกุล" name="email">
-      <input type="text" class="book_payment_phone" placeholder="เบอร์โทรศัพท์" name="phone">
-		</div>
-		<div class="book_payment_input">
-			<input type="text" class="book_payment email" placeholder="E-mail Address" name="email">
-		</div>
-		<div class="clr"></div>
-		<div class="book_payment_notice">
-			
-			<p class="popo">"กรุณากรอกข้อมูลให้ครบถ้วนเพื่อใช้สิทธิ์การยืนยันที่นั่ง
-						"</p>
-		</div>
-	<div class="book_payment_reserve" data-id="reserve_zone" >
-		<div class="book_reserve_left">
-			<b class="popo">สำหรับจองตั๋ว</b>
-			<span>(สามารถจองได้เฉพาะที่นั่งตัว R)</span>
-			<br>
-			<p class="popo">
-				"เมื่อท่านได้รับรหัส กรุณานำรหัสจองและหมายเลขโทรศัพท์มาชำระเงินที่ตู้จำหน่ายบัตรเพื่อรับบัตรชมภาพยนต์ก่อนรอบฉาย 45 นาที"
-			</p>
-		</div>
-		<div class="book_reserve_right">
-			<body>
-
-<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">ยืนยัน</button>
-
-<div id="id02" class="modal">
+				<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">ยืนยัน</button>
+				<div id="id02" class="modal">
   
   <form class="modal-content animate" action="/action_page.php">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
       <img src="img_avatar2.png" alt="Avatar" class="avatar">
     </div>
-
-    <div class="container">
-      <p>ยอดสุทธิของคุณคือ 210 THB</p>
-      <button type="submit">ยืนยันสิทธ์</button>
-      <label>      </label>
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
-    </div>
-  </form>
-</div>
+			</div>
 		</div>
-		<div class="clr"></div>
-	</div>
-	<div class="book_payment_reserve reserve_noneborder" data-id="buy_zone">
-		<b class="popo">สำหรับซื้อตั๋ว</b>
-		<p class="popo">
-			"
-							  เมื่อท่านได้รับรหัส กรุณานำรหัสจองและหมายเลขโทรศัพท์มารับบัตรที่ตู้จำหน่ายบัตรภาพยนต์อัตโนมัติหรือเคาน์เตอร์วีไอพี
-					"
-		</p>
-		<div class="clr"></div>
 	</div>
 </div>
-	<div class="book_payment_bank" data-id="buy_zone">
-   <div class="book_bank_title">เลือกช่องทางการชำระเงิน</div>
-   <div class="book_bank_bg">
-     <ul>
-       <li>
-         <a data-class="bank" href="javascript:;" id="mcashButton">
-           <img class="plp" src="Picture/ad/mcash.png">
-         </a>
-         <a data-class="bank" href="javascript:;" id="kbankButton">
-           <img class="ppl" src="Picture/ad/credit.png">
-         </a>
-       </li>
-       <li style="display: none">
-         <a data-class="bank" href="javascript:;" style="display: none" id="linepay" class="active">
-           <img class="plp" src="Picture/ad/line.png">
-         </a>
-       </li>
-       <li id="2c2pli" style="display: none;">
-         <a data-class="bank" href="javascript:;" id="2c2pButton" style="display: none;">
-           <img class="plp" src="Picture/ad/creditcard.png">
-         </a>
-       </li>
-       <li style="display: none;">
-         <a data-class="bank" href="javascript:;" id="123Button" style="display: none;">
-           <img class="plp" src="Picture/ad/online.png">
-         </a>
-       </li>
-     </ul>
-     <div class="clr"></div>
-   </div> 
-  </div>
-  <div class="clr"></div>
-
-
-
-
-
-
-
-
-</script>
 <br><br>
 <div class="fmenu">
   <div class="wrapper-footer">

@@ -1,5 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Homepage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="Payment.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="Homepage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="script.js Payment.js"></script>
+    <script src="script.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body >
         <div class="topnav" function slide()>
-                <a href="Homepage.html">Home</a>
-                <a href="Homepage.html">Movies</a>
+                <a href="#home">Home</a>
+                <a href="#news">Movies</a>
                 <a href="#contact">Contact</a>
                 <a href="#about">About</a>
                 <div class="topnav-right">
@@ -170,8 +168,6 @@ window.onclick = function(event) {
 							<span class="pink_text">D12</span>
 						</div>
 						<div class="shop_seating_price">
-							"														
-																						210"
 							<sup>THB</sup>
 						</div>
 						<div class="clr"></div>
@@ -187,15 +183,11 @@ window.onclick = function(event) {
 						</div>
 					</div>
 					<div class="shopping_summary_price total_summary" style>
-						<div id="summary_text" class="to_text">ราคารวมสุทธิ
-						<div class="shop_summary_price_text" style="color:white">
-              <div class="pppp">
+						<div id="summary_text" class="to_text">ราคารวมสุทธิ</div>
+						<div class="shop_summary_price_text" style="color:#e3b73e"></div>
 						"
 												   210"
-                           <sup>THB</sup>
-              </div>
-						</div>
-          </div>
+						<sup>THB</sup>
 					</div>
 				</div>
 			</div>
@@ -209,11 +201,10 @@ window.onclick = function(event) {
 	</div>
 	<div class="book_payment_email" id="user-info">
 		<div class="book_payment_input">
-			<input type="text" class="book_payment name" placeholder="ชื่อ - นามสกุล" name="email">
-      <input type="text" class="book_payment_phone" placeholder="เบอร์โทรศัพท์" name="phone">
+			<input type="text" class="book_payment email" placeholder="E-mail Address" name="email">
 		</div>
 		<div class="book_payment_input">
-			<input type="text" class="book_payment email" placeholder="E-mail Address" name="email">
+			<input type="text" class="book_payment_phone" placeholder="Mobile No." name="phone">
 		</div>
 		<div class="clr"></div>
 		<div class="book_payment_notice">
@@ -221,7 +212,7 @@ window.onclick = function(event) {
 			<p class="popo">"กรุณากรอกข้อมูลให้ครบถ้วนเพื่อใช้สิทธิ์การยืนยันที่นั่ง
 						"</p>
 		</div>
-	<div class="book_payment_reserve" data-id="reserve_zone" >
+	<div class="book_payment_reserve" data-id="reserve_zone" style="display: none;">
 		<div class="book_reserve_left">
 			<b class="popo">สำหรับจองตั๋ว</b>
 			<span>(สามารถจองได้เฉพาะที่นั่งตัว R)</span>
@@ -231,29 +222,7 @@ window.onclick = function(event) {
 			</p>
 		</div>
 		<div class="book_reserve_right">
-			<body>
-
-<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">ยืนยัน</button>
-
-<div id="id02" class="modal">
-  
-  <form class="modal-content animate" action="/action_page.php">
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
-    </div>
-
-    <div class="container">
-      <p>ยอดสุทธิของคุณคือ 210 THB</p>
-      <button type="submit">ยืนยันสิทธ์</button>
-      <label>      </label>
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
-    </div>
-  </form>
-</div>
+			<button class="button_reserve">ยืนยันทำรายการ</button>
 		</div>
 		<div class="clr"></div>
 	</div>

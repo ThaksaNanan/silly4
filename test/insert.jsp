@@ -5,7 +5,7 @@
 </form>
 <?php 
 if(isset($_POST['user'])){
-include('connect.jsp');
+include('connect.php');
 $sql = "INSERT INTO member (Member_ID, Member_User, Member_Password,Member_Status)
 VALUES (null,'".$_POST['user']."', '".$_POST['password']."','user')";
 

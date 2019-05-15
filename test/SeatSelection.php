@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 
 <html>
-<%@page import="login.sumit.registration.*" %>
-<%@ page import="java.util.*" %>
-<% Movie_info movie = new Movie_info(); 
-String name = request.getParameter("name_movie");
-String time = request.getParameter("button");
-String language = request.getParameter("sound");
-%>
+<?php
+include('connect.php');
+?>
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="icon" href="Picture/icon/Movie 3.ico" type="image/x-icon">
@@ -46,7 +42,7 @@ $("button").click(function(){
 
 <body >
   <div class="topnav" function slide()>
-    <a href="Homepage.jsp">Home</a>
+    <a href="Homepage.html">Home</a>
     <a href="#news">Movies</a>
     <a href="#contact">Contact</a>
     <a href="#about">About</a>
@@ -67,28 +63,28 @@ $("button").click(function(){
       </button>
       <div class="dropdown-content">
         <div class="gallery">
-          <a class="gallery" target="_blank" href="Movie1.jsp">
+          <a class="gallery" target="_blank" href="Movie1.php">
             <img class="gallery " src="Picture/Movie/shazam.jpg" alt="shazam" width="600" height="400">
           </a>
           <div class="shazam">shazam</div>
         </div>
 
         <div class="gallery">
-          <a class="gallery" target="_blank" href="Movie2.jsp">
+          <a class="gallery" target="_blank" href="Picture/Movie/capmar.jpg">
             <img class="gallery " src="Picture/Movie/capmar.jpg" alt="capmar" width="600" height="400">
           </a>
           <div class="capmar">Captain Marvel</div>
         </div>
 
         <div class="gallery">
-          <a class="gallery" target="_blank" href="Movie3.jsp">
+          <a class="gallery" target="_blank" href="Picture/Movie/dumbo.jpg">
             <img class="gallery " src="Picture/Movie/dumbo.jpg" alt="dumbo" width="600" height="400">
           </a>
           <div class="dumbo">dumbo</div>
         </div>
 
         <div class="gallery">
-          <a class="gallery" target="_blank" href="Movie4.jsp">
+          <a class="gallery" target="_blank" href="Picture/Movie/saeng-krasue.jpg">
             <img class="gallery" src="Picture/Movie/saeng-krasue.jpg" alt="saeng-krasue" width="600" height="400">
           </a>
           <br>
@@ -96,7 +92,7 @@ $("button").click(function(){
         </div>
 
         <div class="gallery">
-          <a class="gallery" target="_blank" href="Movie5.jsp">
+          <a class="gallery" target="_blank" href="Picture/Movie/theking.jpg">
             <img class="gallery" src="Picture/Movie/theking.jpg" alt="theking" width="600" height="400">
           </a>
           <div class="theking">The Kid Who Would Be King</div>
@@ -196,13 +192,13 @@ $("button").click(function(){
           </div>
           <div class="col-sm-3">
             <div class="sidebar-select-seat" style="width: 290px">
-              <div class="member"><img src="Movie/FootA.jpg" style = "width :70%; hieght :70%; "></div>
+              <div class="member"><img src="Movie/ShazamA.jpg" style = "width :70%; hieght :70%; "></div>
               <div class="summary-info">
-                <h2 class="movie-name"><%=name%></h2><br>
+                <h2 class="movie-name"><?php echo $_POST["name_movie"]; ?></h2><br>
                 <ul class="info-list">
                   <li>04 พฤษภาคม 2019</li>
-                  <li ><%=language%></li>
-                  <li ><%=time%></li> 
+                  <li ><?php echo $_POST["sound"]; ?></li>
+                  <li ><?php echo $_POST["button"]; ?></li> 
                 </ul>
               </div>
               <div class="summary-selected" style = "margin-top: 0px;">
@@ -221,16 +217,10 @@ $("button").click(function(){
                     <div class="col"><button type="button"
                         class="button button-blue-trans button-promotion btn-block"><span class="text">ส่วนลด
                           และโปรโมชั่น</span>
-                        <!----></button>
-                        </div>
-                        <form method="get">
-                    <div class="col">
-                    <button type="submit" disabled="disabled"
-                        class="button button-blue button-continue btn-block"name="buy">buy</button>
-                        </div>
-                        </form>
+                        <!----></button></div>
+                    <div class="col"><button type="button" disabled="disabled"
+                        class="button button-blue button-continue btn-block">ดำเนินการต่อ</button></div>
                   </div>
-                 
                 </div>
               </div>
             </div><br>

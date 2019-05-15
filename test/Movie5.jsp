@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php
-include('connect.jsp');
-?>
+<%@page import="login.sumit.registration.*" %>
+<%@ page import="java.util.*" %>
 <head>
     <meta charset="UTF-8">
     <link rel="icon" href="Picture/icon/Movie 3.ico" type="image/x-icon">
@@ -16,7 +15,7 @@ include('connect.jsp');
 
 <body>
     <div class="topnav" function slide()>
-        <a href="Homepage.php">Home</a>
+        <a href="Homepage.jsp">Home</a>
         <a href="#news">Movies</a>
         <a href="#contact">Contact</a>
         <a href="#about">About</a>
@@ -44,21 +43,21 @@ include('connect.jsp');
                 </div>
 
                 <div class="gallery">
-                    <a class="gallery" target="_blank" href="Picture/Movie/capmar.jpg">
+                    <a class="gallery" target="_blank" href="Movie2.jsp">
                         <img class="gallery " src="Picture/Movie/capmar.jpg" alt="capmar" width="600" height="400">
                     </a>
                     <div class="capmar">Captain Marvel</div>
                 </div>
 
                 <div class="gallery">
-                    <a class="gallery" target="_blank" href="Picture/Movie/dumbo.jpg">
+                    <a class="gallery" target="_blank" href="Movie3.jsp">
                         <img class="gallery " src="Picture/Movie/dumbo.jpg" alt="dumbo" width="600" height="400">
                     </a>
                     <div class="dumbo">dumbo</div>
                 </div>
 
                 <div class="gallery">
-                    <a class="gallery" target="_blank" href="Picture/Movie/saeng-krasue.jpg">
+                    <a class="gallery" target="_blank" href="Movie4.jsp">
                         <img class="gallery" src="Picture/Movie/saeng-krasue.jpg" alt="saeng-krasue" width="600"
                             height="400">
                     </a>
@@ -67,7 +66,7 @@ include('connect.jsp');
                 </div>
 
                 <div class="gallery">
-                    <a class="gallery" target="_blank" href="Picture/Movie/theking.jpg">
+                    <a class="gallery" target="_blank" href="Movie5.jsp">
                         <img class="gallery" src="Picture/Movie/theking.jpg" alt="theking" width="600" height="400">
                     </a>
                     <div class="theking">The Kid Who Would Be King</div>
@@ -186,13 +185,13 @@ include('connect.jsp');
                                 </div>
                                 <div class="movie-detail">
                                     <div class="main-detail">
-                                        <h1 class="name">Five Feet Apart</h1>
+                                        <h1 class="name">ขออีกฟุตให้หัวใจเราใกล้กัน</h1>
                                     </div>
-                                    <p class="genre">Genre: Drama</p>
+                                    <p class="genre">หมวดหมู่: Drama</p>
                                     <ul class="movie-detail-list">
-                                        <li class="list-item">Rate: 13</li>
+                                        <li class="list-item">เรทผู้ชม: 13</li>
                                     </ul><a href="M5Daetail.html"
-                                        class="button button-gray-trans button-movie-details">MOVIE DETAIL</a>
+                                        class="button button-gray-trans button-movie-details">รายละเอียดภาพยนตร์</a>
                                 </div>
                             </div>
                         </div>
@@ -203,13 +202,13 @@ include('connect.jsp');
     </div>
     <div class="container3">
         <div class="showtime-box">
-            <div class="showtime-header">Northern Region
+            <div class="showtime-header">ภาคเหนือ
                 <div class="showtime-arrow open"></div>
             </div>
             <div id="list-0000000008">
                 <div>
                     <div class="showtime-cinema">
-                        Major Cineplex Central </div>
+                        เมเจอร์ ซีนีเพล็กซ์ เซ็นทรัล </div>
                     <div class="showtime-list">
                         <div class="showtime-item">
                             <div class="row">
